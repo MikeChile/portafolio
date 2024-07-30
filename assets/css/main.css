@@ -1,0 +1,67 @@
+
+/*GENERAL*/
+body{
+    margin:0;
+    padding: 0;
+}
+
+/*CABEZERA*/
+header{
+    background-color: rgba(31, 31, 31, 0.829);    
+    width: 100%;
+}
+
+/*NAVBAR */
+.nav-link, .navbar-brand{
+    color:white;
+}
+.navbar-toggler{
+    background-color: azure;
+}
+
+/*SOBRE MI */
+#img-perfil{
+    border-radius: 10px;
+    max-width: 300px;    
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+#img-perfil:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+/*CARD*/
+.card {
+    color: #333;
+}
+
+/*HABILIDADES*/
+#html, #css, #js {
+    border: 2px solid red;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+}
+#html {
+    border: 2px solid orange;
+}
+#css {
+    border: 2px solid #ADD8E6;
+}
+#js {
+    border: 2px solid yellow;
+}
+
+.img-hab{
+    width:100px;
+}
+
+/* MODAL */
+.modal{
+    color: black;
+    text-align: justify;
+}

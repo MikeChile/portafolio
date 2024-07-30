@@ -4,14 +4,339 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <title>Portafolio de Miguel Andrades</title>
 </head>
 
-<body>
-    <h1> portafolio</h1>
-    <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit velit numquam accusantium facilis sequi
-        minus? Est fuga sunt animi, possimus, sit incidunt dolore nam ipsa deleniti hic quam repellat dolorem.</h2>
-        <h3>hola</h3>
+<body class="d-flex text-center text-white bg-dark">
+
+    <div class="d-flex w-100 h-100 mx-auto flex-column">
+
+        <!-- Encabezado del portafolio -->
+        <header class="fixed-top">
+            <div>
+                <nav class="navbar nav-masthead justify-content-end p-2 navbar-expand-lg">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="#">
+                            Miguel Andrades
+                        </a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <a class="nav-link active" aria-current="page" href="#about">Sobre mí</a>
+                            <a class="nav-link" href="#proyectos">Proyectos</a>
+                            <a class="nav-link" href="#habilidades">Habilidades</a>
+                            <a class="nav-link" href="#contacto">Contáctame</a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <div class="container">
+
+            <div class="row mt-5 pt-4">
+                <div class="col-12 col-md-6">
+                    <img src="assets/img/mike.jpg" alt="" class="img-fluid mb-2" id="img-perfil">
+                </div>
+                <div class="col-12 col-md-6">
+                    <!-- Sección de presentación -->
+                    <main class="px-3 " id="about">
+                        <h1>Sobre Mí</h1>
+                        <p class="lead">
+                            Hola, soy Miguel Andrades, un desarrollador web apasionado por la tecnología y la
+                            innovación. Me apasiona crear soluciones digitales que mejoren la vida de las
+                            personas.
+                        </p>
+                        <p class="lead">
+                            <a href="#proyectos" class="btn btn-success border-white"> Ver proyectos</a>
+                        </p>
+                    </main>
+                </div>
+
+            </div>
+
+            <!-- Proyectos -->
+            <div class="row mt-4">
+                <div class="col">
+                    <!-- Sección de proyectos -->
+                    <section id="proyectos" class="mb-5">
+                        <h2 class="mb-4">Proyectos</h2>
+                        <div class="row  text-center">
+
+                            <!-- proyecto 1 -->
+                            <div class="col-12 col-md-4 mb-2">
+                                <div class="card">
+                                    <img src="assets/img/pro1.jpg" class="card-img-top" alt="Erp Seguridad">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Erp Seguridad</h5>
+                                        <p class="card-text">Sistema de gestión de seguridad para empresas</p>
+
+                                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                            data-bs-target="#modalProyecto1">
+                                            Más sobre el proyecto
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Modal proyecto 1 -->
+                            <div class="modal fade" id="modalProyecto1" tabindex="-1"
+                                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog  modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Erp Seguridad</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>El proyecto Erp Seguridad es un sistema de gestión de seguridad integral
+                                                diseñado para empresas que buscan proteger sus activos, información y
+                                                empleados de manera efectiva. Este sistema ofrece una plataforma
+                                                completa para la gestión de seguridad, incluyendo control de acceso,
+                                                monitoreo de cámaras de seguridad, gestión de incidentes, análisis de
+                                                riesgos y cumplimiento de normativas.
+                                            </p>
+                                            <p>
+                                                Con Erp Seguridad, las empresas pueden centralizar la gestión de su
+                                                seguridad en una sola plataforma, lo que les permite tener una visión
+                                                clara y completa de su situación de seguridad en tiempo real. El sistema
+                                                también ofrece herramientas de análisis y reportes para ayudar a las
+                                                empresas a identificar áreas de mejora y tomar decisiones informadas.
+                                            </p>
+                                            <p>
+                                                Además, Erp Seguridad es altamente personalizable y puede ser adaptado a
+                                                las necesidades específicas de cada empresa, lo que lo hace ideal para
+                                                empresas de todos los tamaños y sectores. Nuestro equipo de expertos en
+                                                seguridad trabajará con usted para diseñar y implementar una solución
+                                                que se ajuste a sus necesidades y presupuesto.</p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Cerrar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- proyecto 2 -->
+                            <div class="col-12 col-md-4 mb-2">
+                                <div class="card">
+                                    <img src="assets/img/pro2.png" class="card-img-top" alt="Biblioteca Digital">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Biblioteca Digital</h5>
+                                        <p class="card-text">Sistema de gestión de libros para bibliotecas</p>
+
+                                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                            data-bs-target="#modalProyecto2">
+                                            Más sobre el proyecto
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Modal proyecto 2 -->
+                            <div class="modal fade" id="modalProyecto2" tabindex="-1"
+                                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog  modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Biblioteca Digital</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>
+                                                El proyecto Biblioteca Digital es una plataforma de gestión de libros y
+                                                recursos digitales diseñada para bibliotecas y centros de documentación.
+                                                Esta plataforma ofrece una solución integral para la gestión de
+                                                colecciones, préstamos, reservas y acceso a recursos digitales.
+                                            </p>
+                                            <p>
+                                                Con Biblioteca Digital, las bibliotecas pueden organizar y clasificar
+                                                sus colecciones de manera eficiente, ofrecer acceso a recursos digitales
+                                                como e-books, artículos y bases de datos, y gestionar los préstamos y
+                                                reservas de manera automática. La plataforma también incluye
+                                                herramientas de búsqueda y descubrimiento para que los usuarios puedan
+                                                encontrar fácilmente los recursos que necesitan.
+                                            </p>
+                                            <p>
+                                                Además, Biblioteca Digital es altamente personalizable y puede ser
+                                                adaptada a las necesidades específicas de cada biblioteca. Nuestro
+                                                equipo de expertos en tecnología y bibliotecología trabajará con usted
+                                                para diseñar y implementar una solución que se ajuste a sus necesidades
+                                                y presupuesto.
+                                            </p>
+                                            <p>
+                                                Algunas de las características clave de Biblioteca Digital incluyen:
+                                            </p>
+                                            <ul>
+                                                <li>Gestión de colecciones y catálogos</li>
+                                                <li>Acceso a recursos digitales</li>
+                                                <li>Gestión de préstamos y reservas</li>
+                                                <li>Herramientas de búsqueda y descubrimiento</li>
+                                                <li>Personalización y adaptabilidad</li>
+                                            </ul>
+
+                                            <p>
+                                                Nuestro objetivo es ayudar a las bibliotecas a mejorar su eficiencia y
+                                                ofrecer un mejor servicio a sus usuarios, mediante la implementación de
+                                                una plataforma de gestión de recursos digitales moderna y eficaz.
+                                            </p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Cerrar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- proyecto 3 -->
+                            <div class="col-12 col-md-4 mb-2">
+                                <div class="card">
+                                    <img src="assets/img/pro3.jpg" class="card-img-top" alt="Inmoviliaria">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Inmoviliaria</h5>
+                                        <p class="card-text">Sistema de gestión de inmuebles para inmobiliarias</p>
+
+                                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                            data-bs-target="#modalProyecto3">
+                                            Más sobre el proyecto
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Modal proyecto 3 -->
+                            <div class="modal fade" id="modalProyecto3" tabindex="-1"
+                                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Inmoviliaria</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>El proyecto Inmoviliaria es un sistema de gestión de propiedades y
+                                                transacciones inmobiliarias diseñado para inmobiliarias, agentes y
+                                                propietarios de bienes raíces. Esta plataforma ofrece una solución
+                                                integral para la gestión de propiedades, clientes, transacciones y
+                                                finanzas.</p>
+                                            <p>Con Inmoviliaria, las inmobiliarias pueden gestionar sus propiedades de
+                                                manera eficiente, incluyendo la publicación de anuncios, la gestión de
+                                                visitas y ofertas, y la administración de contratos y transacciones. La
+                                                plataforma también incluye herramientas de gestión de clientes y
+                                                seguimiento de leads, para ayudar a las inmobiliarias a construir
+                                                relaciones sólidas con sus clientes y aumentar sus ventas.</p>
+                                            <p>Además, Inmoviliaria ofrece una gestión financiera completa, incluyendo
+                                                la administración de pagos, facturas y gastos, lo que permite a las
+                                                inmobiliarias tener un control total sobre sus finanzas.</p>
+                                            <p>Algunas de las características clave de Inmoviliaria incluyen:</p>
+                                            <ul>
+                                                <li>Gestión de propiedades y anuncios</li>
+                                                <li>Gestión de clientes y seguimiento de leads</li>
+                                                <li>Gestión de transacciones y contratos</li>
+                                                <li>Gestión financiera y administración de pagos</li>
+                                                <li>Informes y análisis de desempeño</li>
+                                            </ul>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Cerrar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+                    </section>
+                </div>
+            </div>
+
+            <!-- Habilidades -->
+            <div class="row mt-4">
+                <div class="col">
+                    <!-- Sección de habilidades -->
+                    <section id="habilidades" class="mb-5">
+                        <h2 class="mb-4">Habilidades</h2>
+                        <div class="row mb-3 text-center">
+                            <!-- Agrega íconos o logos de habilidades aquí -->
+                            <div class="col m-1" id="html">
+                                <i class="fab fa-html5"></i>
+                                <h4>HTML5</h4>
+                            </div>
+                            <div class="col m-1" id="css">
+                                <i class="fab fa-css3-alt"></i>
+                                <h4>CSS3</h4>
+                            </div>
+                            <div class="col m-1" id="js">
+                                <i class="fab fa-js"></i>
+                                <h4>JavaScript</h4>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+
+            <!-- Contacto -->
+            <div class="row mt-4 justify-content-center">
+                <div class="col-12 col-sm-10 col-md-6">
+                    <!-- Sección de contacto -->
+                    <section id="contacto" class="mb-5">
+                        <h2 class="mb-4">Contáctame</h2>
+
+                        <form action="" id="formulario">
+                            <div class="row">
+                                <div class="col-12 col-md-6">
+                                    <label for="nombre">Nombre</label>
+                                    <input type="text" id="nombre" name="nombre" placeholder="Nombre"
+                                        class="form-control mb-3" required pattern="[a-zA-Z ]{1,100}">
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <label for="apellido">Apellido</label>
+                                    <input type="text" id="apellido" name="apellido" placeholder="Apellido"
+                                        class="form-control mb-3" required pattern="[a-zA-Z ]{1,100}">
+                                </div>
+
+                                <div class="col-12">
+                                    <label for="email">Correo electrónico</label>
+                                    <input type="email" id="email" name="email" placeholder="Correo electrónico"
+                                        class="form-control mb-3" required>
+                                </div>
+                                <div class="col-12">
+                                    <label for="mensaje">Mensaje</label>
+                                    <textarea id="mensaje" name="mensaje" placeholder="Mensaje"
+                                        class="form-control mb-3" required maxlength="400"></textarea>
+                                </div>
+                                <div class="col-12">
+                                    <button class="btn btn-success ">Enviar</button>
+                                </div>
+                            </div>
+                        </form>
+                    </section>
+                </div>
+            </div>
+        </div>
+
+        <!-- Pie de página -->
+        <footer class="mt-auto text-white-50">
+            <p>Miguel Andrades 2024</p>
+        </footer>
+    </div>
+
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
 </body>
 
 </html>
