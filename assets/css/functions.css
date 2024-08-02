@@ -1,0 +1,185 @@
+.carousel-control-next {
+    right: -90px;
+}
+.carousel-control-prev {
+    left: -90px;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,700);
+
+/* Variables */
+:root {
+  --dark-blue: #1E1B2D;
+  --light-blue: #828092;
+  --white: #fff;
+  --black: #000;
+  --open-sans: 'Open Sans', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {  
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: var(--open-sans);
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-family: var(--open-sans);
+  font-weight: 300;
+}
+
+.row {
+  margin: auto 0;
+}
+
+/* Base styles */
+.card {
+  float: left;
+  padding: 1rem;
+}
+
+.card .menu-content {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.card .menu-content li {
+  display: inline-block;
+}
+
+.card .menu-content a {
+  color: var(--white);
+}
+
+.example-3{
+    width: 100%;
+}
+
+.card .wrapper {
+  background-color: var(--white);
+  min-height: 540px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 19px 38px rgba(var(--black), 0.3), 0 15px 12px rgba(var(--black), 0.2);
+}
+
+.card .wrapper:hover .data {
+  transform: translateY(0);
+}
+
+.card .data {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  transform: translateY(calc(80px + 1em));
+  transition: transform 0.3s;
+}
+
+.card .data .content {
+  padding: 1.5em;
+  position: relative;
+  z-index: 1;
+}
+
+.card .type {
+  font-size: 12px;
+}
+
+.card .title {
+  margin-top: 10px;
+}
+
+.card .text {
+  height: 70px;
+  margin: 0;
+}
+
+.card input[type='checkbox'] {
+  display: none;
+}
+
+.card input[type='checkbox']:checked + .menu-content {
+  transform: translateY(-60px);
+}
+
+/* IMAGENES */
+    /* CALCULADORA */
+    .example-3 .wrapper {
+        background: url(https://play-lh.googleusercontent.com/cKbjdKv2iaAiA0RprF9Ga582ewQO6vwaBHkT5su6_ObBMGtWVm5g7MKIyEJhJfkoBZM) 30% 1% / cover no-repeat;
+    }
+
+    /* GESTION DE EMPLEADOS */
+    .sec2{
+        background: url(https://www.bizneo.com/blog/wp-content/uploads/2020/01/Base-de-datos-de-Recursos-Humanos-1.jpg) 30% 1% / cover no-repeat !important;
+    } 
+    
+  .example-3 .date {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #333;
+    color: #ffffff;
+    padding: 0.75rem;
+  }
+  
+  .example-3 .date span {
+    display: block;
+    text-align: center;
+  }
+  
+  .example-3 .date .day {
+    font-weight: 700;
+    font-size: 3rem;
+    text-shadow: 2px 3px 2px rgba(0, 0, 0, 0.18);
+  }
+  
+  .example-3 .date .month {
+    text-transform: uppercase;
+  }
+  
+  .example-3 .date .month,
+  .example-3 .date .year {
+    font-size: 10px;
+  }
+  
+  .example-3 .content {
+    background-color: #333;
+    color: white;
+    box-shadow: 0 5px 30px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .example-3 .title a {
+    color: white;
+  }
+  
+  .example-3 .menu-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+  }
+  
+  .example-3 .menu-content li {
+    text-align: center;
+    width: 3rem;
+    background-color: #333;
+    height: 3rem;
+    position: relative;
+  }
+  
+  .example-3 .menu-content a {
+    font-size: 24px;
+  }
+
+.menu-content li:hover{
+    background-color: #0d9cfd;
+}
+
