@@ -113,12 +113,17 @@ h1 {
 /* IMAGENES */
     /* CALCULADORA */
     .example-3 .wrapper {
-        background: url(https://play-lh.googleusercontent.com/cKbjdKv2iaAiA0RprF9Ga582ewQO6vwaBHkT5su6_ObBMGtWVm5g7MKIyEJhJfkoBZM) 30% 1% / cover no-repeat;
+        background: url(https://play-lh.googleusercontent.com/cKbjdKv2iaAiA0RprF9Ga582ewQO6vwaBHkT5su6_ObBMGtWVm5g7MKIyEJhJfkoBZM) 40% 1% / cover no-repeat;
     }
 
     /* GESTION DE EMPLEADOS */
     .sec2{
-        background: url(https://www.bizneo.com/blog/wp-content/uploads/2020/01/Base-de-datos-de-Recursos-Humanos-1.jpg) 30% 1% / cover no-repeat !important;
+        background: url(https://www.bizneo.com/blog/wp-content/uploads/2020/01/Base-de-datos-de-Recursos-Humanos-1.jpg) 40% 1% / cover no-repeat !important;
+    } 
+
+    /* LISTA DE TAREAS */
+    .sec3{
+        background: url(https://appmaster.io/api/_files/PB7ZgKfGJ4TGEFBPQRyeod/download/) 40% 1% / cover no-repeat !important;
     } 
     
   .example-3 .date {
