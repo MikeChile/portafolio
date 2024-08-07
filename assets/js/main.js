@@ -105,9 +105,18 @@ $(document).ready(function () {
       sugerenciasDiv.style.display = 'none';
     } else {
       sugerenciasDiv.style.display = 'block';
-      mostrarSugerencias(sugerenciasFiltradas);
+      if (sugerenciasFiltradas.length === 0) {
+        mostrarMensajeNoEncontrado();
+      } else {
+        mostrarSugerencias(sugerenciasFiltradas);
+      }
     }
   });
+
+  // Función para mostrar mensaje especial si no se encuentran sugerencias
+  function mostrarMensajeNoEncontrado() {
+    sugerenciasDiv.innerHTML = '<p>Lo siento, no se encontraron coincidencias... aún! Pero estoy en constante aprendizaje, así que es posible que pronto pueda ayudarte con este lenguaje..</p>';
+  }
 
   //MOSTRAR SUGERENCIAS
   function mostrarSugerencias(sugerencias) {
