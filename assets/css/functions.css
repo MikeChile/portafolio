@@ -130,6 +130,11 @@ h1 {
      .sec4{
       background: url(https://www.julianmarquina.es/wp-content/uploads/Herramientas-para-administrar-y-gestionar-nuestra-colecci%C3%B3n-de-libros-electr%C3%B3nicos.jpg) 40% 1% / cover no-repeat !important;
   } 
+
+  /* RESERVA HOTELERA */
+  .sec5{
+    background: url(https://img.freepik.com/vector-gratis/ilustracion-concepto-edificio-hotel_114360-14039.jpg) 40% 1% / cover no-repeat !important;
+} 
     
   .example-3 .date {
     position: absolute;
