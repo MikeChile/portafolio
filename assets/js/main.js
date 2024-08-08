@@ -33,7 +33,7 @@ $(document).ready(function () {
     }
   });
 
-  const palabras = ['Desarrollador web', 'Programador PHP', 'Programador JavaScript'];
+  const palabras = ['Desarrollador web', 'Programador PHP', 'Programador JavaScript', 'Programador Full-Stack', 'Administrador de Bases de Datos'];
   let indice = 0;
   let tiempo = 4000; // Tiempo en milisegundos entre cada palabra
 

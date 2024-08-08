@@ -167,7 +167,7 @@ header.fondo {
   background-position: center;
 }
 
-.title{
+.title-mike{
   font-size: 75px;
   font-weight: 600;
   margin-left: -3px;
@@ -179,6 +179,18 @@ header.fondo {
 }
 .nav-link:hover {
   color: #fff; /* Color principal del texto */
+  text-shadow: 
+    0 0 5px #fff, /* Sombra blanca para dar brillo */
+    0 0 10px #fff, /* Sombra blanca para dar brillo */
+    0 0 20px rgba(255, 0, 255, 0.5), /* Sombra morada para el efecto neon */
+    0 0 30px rgba(255, 0, 255, 0.5), /* Sombra morada para el efecto neon */
+    0 0 40px rgba(255, 0, 255, 0.5), /* Sombra morada para el efecto neon */
+    0 0 50px rgba(255, 0, 255, 0.5); /* Sombra morada para el efecto neon */
+  border-bottom: 2px solid #fff; /* Borde inferior blanco */
+}
+
+.active{
+  color: #ffffff; /* Color principal del texto */
   text-shadow: 
     0 0 5px #fff, /* Sombra blanca para dar brillo */
     0 0 10px #fff, /* Sombra blanca para dar brillo */
