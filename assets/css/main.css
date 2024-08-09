@@ -1,6 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
-
-
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
 
 .ubuntu-light {
   font-family: "Ubuntu", sans-serif;
@@ -57,17 +55,17 @@
   box-sizing: border-box;
   font-family: "Ubuntu", sans-serif;
 }
-html{
+html {
   font-family: "Ubuntu", sans-serif;
 }
-  
-body{
-    margin:0;
-    padding: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
 }
 
 /*CABEZERA*/
@@ -111,7 +109,12 @@ header.fondo {
   margin-top: 10px;
   padding: 10px;
   border: 3px solid;
-  border-image: linear-gradient(to bottom, rgba(255, 0, 255, 0.5), rgba(255, 0, 255, 0.5)) 1 100%;
+  border-image: linear-gradient(
+      to bottom,
+      rgba(255, 0, 255, 0.5),
+      rgba(255, 0, 255, 0.5)
+    )
+    1 100%;
   border-radius: 5px;
   background-color: #fff;
   color: #000;
@@ -130,27 +133,24 @@ header.fondo {
 .navbar-toggler {
   background-color: transparent !important;
 }
-.bx-menu{
-  font-size:40px;
-  color:white;
-  text-shadow: 
-    0 0 5px #fff, /* Sombra blanca para dar brillo */
-    0 0 10px #fff, /* Sombra blanca para dar brillo */
-    0 0 20px rgba(255, 0, 255, 0.5), /* Sombra morada para el efecto neon */
-    0 0 30px rgba(255, 0, 255, 0.5), /* Sombra morada para el efecto neon */
-    0 0 40px rgba(255, 0, 255, 0.5), /* Sombra morada para el efecto neon */
-    0 0 50px rgba(255, 0, 255, 0.5); /* Sombra morada para el efecto neon */
+.bx-menu {
+  font-size: 40px;
+  color: white;
+  text-shadow: 0 0 5px #fff, /* Sombra blanca para dar brillo */ 0 0 10px #fff,
+    /* Sombra blanca para dar brillo */ 0 0 20px rgba(255, 0, 255, 0.5),
+    /* Sombra morada para el efecto neon */ 0 0 30px rgba(255, 0, 255, 0.5),
+    /* Sombra morada para el efecto neon */ 0 0 40px rgba(255, 0, 255, 0.5),
+    /* Sombra morada para el efecto neon */ 0 0 50px rgba(255, 0, 255, 0.5); /* Sombra morada para el efecto neon */
 }
 
 .navbar-toggler:focus {
   text-decoration: none;
   outline: 0;
-  box-shadow: 0 0 5px #fff, /* Sombra blanca para dar brillo */
-  0 0 10px #fff, /* Sombra blanca para dar brillo */
-  0 0 20px rgba(255, 0, 255, 0.5), /* Sombra morada para el efecto neon */
-  0 0 30px rgba(255, 0, 255, 0.5), /* Sombra morada para el efecto neon */
-  0 0 40px rgba(255, 0, 255, 0.5), /* Sombra morada para el efecto neon */
-  0 0 50px rgba(255, 0, 255, 0.5); /* Sombra morada para el efecto neon */
+  box-shadow: 0 0 5px #fff, /* Sombra blanca para dar brillo */ 0 0 10px #fff,
+    /* Sombra blanca para dar brillo */ 0 0 20px rgba(255, 0, 255, 0.5),
+    /* Sombra morada para el efecto neon */ 0 0 30px rgba(255, 0, 255, 0.5),
+    /* Sombra morada para el efecto neon */ 0 0 40px rgba(255, 0, 255, 0.5),
+    /* Sombra morada para el efecto neon */ 0 0 50px rgba(255, 0, 255, 0.5); /* Sombra morada para el efecto neon */
 }
 
 .navbar-collapse.collapse.show {
@@ -158,7 +158,7 @@ header.fondo {
 }
 
 /*PRESENTACIÓN*/
-#presentacion{
+#presentacion {
   background-image: url(../img/header.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -167,53 +167,48 @@ header.fondo {
   background-position: center;
 }
 
-.title-mike{
+.title-mike {
   font-size: 75px;
   font-weight: 600;
   margin-left: -3px;
 }
 
 /*NAVBAR */
-.nav-link, .navbar-brand{
-    color:white;
+.nav-link,
+.navbar-brand {
+  color: white;
 }
 .nav-link:hover {
   color: #fff; /* Color principal del texto */
-  text-shadow: 
-    0 0 5px #fff, /* Sombra blanca para dar brillo */
-    0 0 10px #fff, /* Sombra blanca para dar brillo */
-    0 0 20px rgba(255, 0, 255, 0.5), /* Sombra morada para el efecto neon */
-    0 0 30px rgba(255, 0, 255, 0.5), /* Sombra morada para el efecto neon */
-    0 0 40px rgba(255, 0, 255, 0.5), /* Sombra morada para el efecto neon */
-    0 0 50px rgba(255, 0, 255, 0.5); /* Sombra morada para el efecto neon */
+  text-shadow: 0 0 5px #fff, /* Sombra blanca para dar brillo */ 0 0 10px #fff,
+    /* Sombra blanca para dar brillo */ 0 0 20px rgba(255, 0, 255, 0.5),
+    /* Sombra morada para el efecto neon */ 0 0 30px rgba(255, 0, 255, 0.5),
+    /* Sombra morada para el efecto neon */ 0 0 40px rgba(255, 0, 255, 0.5),
+    /* Sombra morada para el efecto neon */ 0 0 50px rgba(255, 0, 255, 0.5); /* Sombra morada para el efecto neon */
   border-bottom: 2px solid #fff; /* Borde inferior blanco */
 }
 
-.active{
+.active {
   color: #ffffff; /* Color principal del texto */
-  text-shadow: 
-    0 0 5px #fff, /* Sombra blanca para dar brillo */
-    0 0 10px #fff, /* Sombra blanca para dar brillo */
-    0 0 20px rgba(255, 0, 255, 0.5), /* Sombra morada para el efecto neon */
-    0 0 30px rgba(255, 0, 255, 0.5), /* Sombra morada para el efecto neon */
-    0 0 40px rgba(255, 0, 255, 0.5), /* Sombra morada para el efecto neon */
-    0 0 50px rgba(255, 0, 255, 0.5); /* Sombra morada para el efecto neon */
+  text-shadow: 0 0 5px #fff, /* Sombra blanca para dar brillo */ 0 0 10px #fff,
+    /* Sombra blanca para dar brillo */ 0 0 20px rgba(255, 0, 255, 0.5),
+    /* Sombra morada para el efecto neon */ 0 0 30px rgba(255, 0, 255, 0.5),
+    /* Sombra morada para el efecto neon */ 0 0 40px rgba(255, 0, 255, 0.5),
+    /* Sombra morada para el efecto neon */ 0 0 50px rgba(255, 0, 255, 0.5); /* Sombra morada para el efecto neon */
   border-bottom: 2px solid #fff; /* Borde inferior blanco */
 }
-.navbar-toggler{
-    background-color: azure;
+.navbar-toggler {
+  background-color: azure;
 }
 .navbar-brand {
   font-size: 24px;
   font-weight: bold;
   color: #fff; /* Color principal del texto */
-  text-shadow: 
-    0 0 5px #fff, /* Sombra blanca para dar brillo */
-    0 0 10px #fff, /* Sombra blanca para dar brillo */
-    0 0 20px rgba(255, 0, 255, 0.5), /* Sombra morada para el efecto neon */
-    0 0 30px rgba(255, 0, 255, 0.5), /* Sombra morada para el efecto neon */
-    0 0 40px rgba(255, 0, 255, 0.5), /* Sombra morada para el efecto neon */
-    0 0 50px rgba(255, 0, 255, 0.5); /* Sombra morada para el efecto neon */
+  text-shadow: 0 0 5px #fff, /* Sombra blanca para dar brillo */ 0 0 10px #fff,
+    /* Sombra blanca para dar brillo */ 0 0 20px rgba(255, 0, 255, 0.5),
+    /* Sombra morada para el efecto neon */ 0 0 30px rgba(255, 0, 255, 0.5),
+    /* Sombra morada para el efecto neon */ 0 0 40px rgba(255, 0, 255, 0.5),
+    /* Sombra morada para el efecto neon */ 0 0 50px rgba(255, 0, 255, 0.5); /* Sombra morada para el efecto neon */
 }
 
 .navbar-brand span {
@@ -222,36 +217,32 @@ header.fondo {
 }
 
 .navbar-brand span::after {
-  content: 'Dev'; /* Texto que se va a aplicar el efecto neon */
+  content: "Dev"; /* Texto que se va a aplicar el efecto neon */
   position: absolute;
   top: 0;
   left: 0;
   color: rgba(255, 0, 255, 0.5); /* Color morado para el efecto neon */
-  text-shadow: 
-    0 0 5px rgba(255, 0, 255, 0.5), /* Sombra morada para el efecto neon */
-    0 0 10px rgba(255, 0, 255, 0.5), /* Sombra morada para el efecto neon */
-    0 0 20px rgba(255, 0, 255, 0.5), /* Sombra morada para el efecto neon */
-    0 0 30px rgba(255, 0, 255, 0.5), /* Sombra morada para el efecto neon */
-    0 0 40px rgba(255, 0, 255, 0.5); /* Sombra morada para el efecto neon */
+  text-shadow: 0 0 5px rgba(255, 0, 255, 0.5),
+    /* Sombra morada para el efecto neon */ 0 0 10px rgba(255, 0, 255, 0.5),
+    /* Sombra morada para el efecto neon */ 0 0 20px rgba(255, 0, 255, 0.5),
+    /* Sombra morada para el efecto neon */ 0 0 30px rgba(255, 0, 255, 0.5),
+    /* Sombra morada para el efecto neon */ 0 0 40px rgba(255, 0, 255, 0.5); /* Sombra morada para el efecto neon */
 }
 
 .estilo-titulo {
   font-size: 2rem;
   font-weight: bold;
   color: #fff; /* Color principal del texto */
-  text-shadow: 
-    0 0 5px #fff, /* Sombra blanca para dar brillo */
-    0 0 10px #fff, /* Sombra blanca para dar brillo */
-    0 0 20px rgba(255, 0, 255, 0.5), /* Sombra morada para el efecto neon */
-    0 0 30px rgba(255, 0, 255, 0.5), /* Sombra morada para el efecto neon */
-    0 0 40px rgba(255, 0, 255, 0.5), /* Sombra morada para el efecto neon */
-    0 0 50px rgba(255, 0, 255, 0.5); /* Sombra morada para el efecto neon */
+  text-shadow: 0 0 5px #fff, /* Sombra blanca para dar brillo */ 0 0 10px #fff,
+    /* Sombra blanca para dar brillo */ 0 0 20px rgba(255, 0, 255, 0.5),
+    /* Sombra morada para el efecto neon */ 0 0 30px rgba(255, 0, 255, 0.5),
+    /* Sombra morada para el efecto neon */ 0 0 40px rgba(255, 0, 255, 0.5),
+    /* Sombra morada para el efecto neon */ 0 0 50px rgba(255, 0, 255, 0.5); /* Sombra morada para el efecto neon */
 }
 
 .simbolo-tipeo {
   animation: parpadeo 1s infinite;
 }
-
 
 #btn-ir-abajo .bxs-chevrons-down {
   font-size: 35px;
@@ -264,13 +255,11 @@ header.fondo {
   height: 50px;
   border-radius: 50%;
   animation: rebote 2s infinite;
-  text-shadow: 
-    0 0 5px #fff, /* Sombra blanca para dar brillo */
-    0 0 10px #fff, /* Sombra blanca para dar brillo */
-    0 0 20px rgba(255, 0, 255, 0.5), /* Sombra morada para el efecto neon */
-    0 0 30px rgba(255, 0, 255, 0.5), /* Sombra morada para el efecto neon */
-    0 0 40px rgba(255, 0, 255, 0.5), /* Sombra morada para el efecto neon */
-    0 0 50px rgba(255, 0, 255, 0.5); /* Sombra morada para el efecto neon */
+  text-shadow: 0 0 5px #fff, /* Sombra blanca para dar brillo */ 0 0 10px #fff,
+    /* Sombra blanca para dar brillo */ 0 0 20px rgba(255, 0, 255, 0.5),
+    /* Sombra morada para el efecto neon */ 0 0 30px rgba(255, 0, 255, 0.5),
+    /* Sombra morada para el efecto neon */ 0 0 40px rgba(255, 0, 255, 0.5),
+    /* Sombra morada para el efecto neon */ 0 0 50px rgba(255, 0, 255, 0.5); /* Sombra morada para el efecto neon */
 }
 
 @keyframes rebote {
@@ -298,136 +287,136 @@ header.fondo {
 }
 
 /*SOBRE MI */
-#img-perfil{
-    border-radius: 10px;
-    max-width: 300px;    
-    transition: transform 0.5s ease, box-shadow 0.5s ease;
+#img-perfil {
+  border-radius: 10px;
+  max-width: 300px;
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
 }
 
 #img-perfil:hover {
-    transform: scale(1.1);
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+  transform: scale(1.1);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
 }
 
 /*CARD*/
 .card {
-    color: #333;
+  color: #333;
 }
 
-.img-hab{
-    width:100px;
+.img-hab {
+  width: 100px;
 }
 
 /* MODAL */
-.modal{
-    color: black;
-    text-align: justify;
+.modal {
+  color: black;
+  text-align: justify;
 }
 
 /* SKILL */
 .skill {
-    width: 160px;
-        height: 160px;
-position: relative;
+  width: 160px;
+  height: 160px;
+  position: relative;
 }
-  
-  .outer {
-    height: 160px;
-    width: 160px;
-    border-radius: 50%;
-    padding: 20px;
-    box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 1.5),
-      -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
-  }
-  
-  .inner {
-    height: 120px;
-    width: 120px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2),
-      inset -4px -4px 6px -1px rgba(255, 255, 255, 0.7),
-      -0.5px -0.5px 0px rgba(255, 255, 255, 1),
-      0.5px 0.5px 0px rgba(0, 0, 0, 0.15), 0px 12px 10px -10px rgba(0, 0, 0, 0.05);
-  }
-  
-  #number {
-    font-weight: 600;
-    color: #dedede;
-  }
-  
-  :root {
-    --html-color: #e91e63;
-    --css-color: #4CAF50;
-    --javascript-color: #2196F3;
-    --php-color: #9C27B0;
-  }
 
-  /*HTML*/
-  circle {
-    fill: none;
-    stroke: url(#GradientColor);
-    stroke-width: 20px;
-    stroke-dasharray: 472;
-    stroke-dashoffset: 472;
-    animation: anim 2s linear forwards;
-  }
-  
-  .html-circle-skill {
-    position: absolute;
-    top: 0%;
-    left: 0%;
-  }
+.outer {
+  height: 160px;
+  width: 160px;
+  border-radius: 50%;
+  padding: 20px;
+  box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 1.5),
+    -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+}
 
-  .css {
-    fill: none;
-    stroke: url(#GradientColor);
-    stroke-width: 20px;
-    stroke-dasharray: 472;
-    stroke-dashoffset: 300;
-    animation: anim-css 2s linear forwards;
-    -webkit-animation: anim-css 2s linear forwards;
+.inner {
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2),
+    inset -4px -4px 6px -1px rgba(255, 255, 255, 0.7),
+    -0.5px -0.5px 0px rgba(255, 255, 255, 1),
+    0.5px 0.5px 0px rgba(0, 0, 0, 0.15), 0px 12px 10px -10px rgba(0, 0, 0, 0.05);
+}
+
+#number {
+  font-weight: 600;
+  color: #dedede;
+}
+
+:root {
+  --html-color: #e91e63;
+  --css-color: #4caf50;
+  --javascript-color: #2196f3;
+  --php-color: #9c27b0;
+}
+
+/*HTML*/
+circle {
+  fill: none;
+  stroke: url(#GradientColor);
+  stroke-width: 20px;
+  stroke-dasharray: 472;
+  stroke-dashoffset: 472;
+  animation: anim 2s linear forwards;
+}
+
+.html-circle-skill {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+}
+
+.css {
+  fill: none;
+  stroke: url(#GradientColor);
+  stroke-width: 20px;
+  stroke-dasharray: 472;
+  stroke-dashoffset: 300;
+  animation: anim-css 2s linear forwards;
+  -webkit-animation: anim-css 2s linear forwards;
 }
 .javascript {
-    fill: none;
-    stroke: url(#GradientColor);
-    stroke-width: 20px;
-    stroke-dasharray: 472;
-    stroke-dashoffset: 400;
-    animation: anim-js 2s linear forwards;
-    -webkit-animation: anim-js 2s linear forwards;
+  fill: none;
+  stroke: url(#GradientColor);
+  stroke-width: 20px;
+  stroke-dasharray: 472;
+  stroke-dashoffset: 400;
+  animation: anim-js 2s linear forwards;
+  -webkit-animation: anim-js 2s linear forwards;
 }
-  .php {
-    fill: none;
-    stroke: url(#GradientColor);
-    stroke-width: 20px;
-    stroke-dasharray: 472;
-    stroke-dashoffset: 300;
-    animation: anim-php 2s linear forwards;
+.php {
+  fill: none;
+  stroke: url(#GradientColor);
+  stroke-width: 20px;
+  stroke-dasharray: 472;
+  stroke-dashoffset: 300;
+  animation: anim-php 2s linear forwards;
 }
 
-  @keyframes anim {
-    100% {
-      stroke-dashoffset: 65;
-    }
+@keyframes anim {
+  100% {
+    stroke-dashoffset: 65;
   }
-  @keyframes anim-php {
-    100% {
-      stroke-dashoffset: 160;
-    }
+}
+@keyframes anim-php {
+  100% {
+    stroke-dashoffset: 160;
   }
-  @keyframes anim-css {
-    100% {
-      stroke-dashoffset: 85;
-    }
+}
+@keyframes anim-css {
+  100% {
+    stroke-dashoffset: 85;
   }
-  @keyframes anim-js {
-    100% {
-      stroke-dashoffset: 215;
-    }
+}
+@keyframes anim-js {
+  100% {
+    stroke-dashoffset: 215;
   }
+}
 
 /* SOBRE MI */
 #about {
@@ -445,7 +434,7 @@ position: relative;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.redes{
+.redes {
   display: inline;
   background-color: #333;
   border-radius: 50%;
@@ -453,59 +442,55 @@ position: relative;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
-  padding:10px;
-  font-size:24px;
-  color:white;
+  padding: 10px;
+  font-size: 24px;
+  color: white;
 }
-.redes:hover{
-  box-shadow:  0 0 5px #fff, /* Sombra blanca para dar brillo */
-  0 0 10px #fff, /* Sombra blanca para dar brillo */
-  0 0 20px rgba(255, 0, 255, 0.5), /* Sombra morada para el efecto neon */
-  0 0 30px rgba(255, 0, 255, 0.5), /* Sombra morada para el efecto neon */
-  0 0 40px rgba(255, 0, 255, 0.5), /* Sombra morada para el efecto neon */
-  0 0 50px rgba(255, 0, 255, 0.5); /* Sombra morada para el efecto neon */;
-  
+.redes:hover {
+  box-shadow: 0 0 5px #fff, /* Sombra blanca para dar brillo */ 0 0 10px #fff,
+    /* Sombra blanca para dar brillo */ 0 0 20px rgba(255, 0, 255, 0.5),
+    /* Sombra morada para el efecto neon */ 0 0 30px rgba(255, 0, 255, 0.5),
+    /* Sombra morada para el efecto neon */ 0 0 40px rgba(255, 0, 255, 0.5),
+    /* Sombra morada para el efecto neon */ 0 0 50px rgba(255, 0, 255, 0.5); /* Sombra morada para el efecto neon */
 }
 
-.subtitle{
+.subtitle {
   font-size: 45px;
   margin-bottom: 40px;
 }
 
-
-
-svg {  
+svg {
   overflow: hidden;
   margin: 0 auto;
 }
 
 #name {
-  font-family: 'Share Tech Mono', sans-serif;
+  font-family: "Share Tech Mono", sans-serif;
   font-size: 50px;
   fill: white;
   filter: url(#filter);
   fill: white;
-  font-family: 'Share Tech Mono', sans-serif;
+  font-family: "Share Tech Mono", sans-serif;
   font-size: 50px;
   -webkit-filter: url(#filter);
 }
 
-:root{
-  --neon: hsl(200,100%,50%);
-  --neon2: rgba(255, 0, 255, 0.5);;
-  --bg: hsl(240,10%,1%);
+:root {
+  --neon: hsl(200, 100%, 50%);
+  --neon2: rgba(255, 0, 255, 0.5);
+  --bg: hsl(240, 10%, 1%);
 }
 
-.btn-neon{
+.btn-neon {
   width: 90%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.neon2{
+.neon2 {
   position: relative;
-  font-size: 2vw;
+  font-size: 20px;
   display: inline-block;
   text-decoration: none;
   letter-spacing: 0.1em;
@@ -519,84 +504,94 @@ svg {
   .neon2 {
     font-size: 5vw;
   }
-  .cajaAction{
+  .cajaAction {
     margin-bottom: 300px;
   }
 }
-.neon{
+.neon {
   color: var(--neon);
   text-shadow: 0 0 0.1em var(--neon), 0 0 0.5em var(--neon), 0 0 1em var(--neon);
 }
-.neon2{
+.neon2 {
   color: var(--neon2);
-  text-shadow: 0 0 0.1em var(--neon2), 0 0 0.5em var(--neon2), 0 0 1em var(--neon2);
+  text-shadow: 0 0 0.1em var(--neon2), 0 0 0.5em var(--neon2),
+    0 0 1em var(--neon2);
 }
 
-.neon:hover, .neon:focus{
+.neon:hover,
+.neon:focus {
   color: white;
   background: var(--neon);
-  box-shadow: 0 0 0.1em var(--neon), 0 0 0.5em var(--neon), 0 0 1.5em var(--neon), 0 0 3em var(--neon);
+  box-shadow: 0 0 0.1em var(--neon), 0 0 0.5em var(--neon),
+    0 0 1.5em var(--neon), 0 0 3em var(--neon);
   transition: 100ms;
   transition-delay: 550ms;
 }
-.neon2:hover, .neon2:focus{
+.neon2:hover,
+.neon2:focus {
   color: var(--bg);
   background: var(--neon2);
-  box-shadow: 0 0 0.2em var(--neon2), 0 0 0.5em var(--neon2), 0 0 1em var(--neon2), 0 0 2.5em var(--neon2);
+  box-shadow: 0 0 0.2em var(--neon2), 0 0 0.5em var(--neon2),
+    0 0 1em var(--neon2), 0 0 2.5em var(--neon2);
   transition: 100ms;
 }
-.neon span,.neon2 span{
+.neon span,
+.neon2 span {
   position: absolute;
   display: block;
 }
-.neon span:nth-child(1){
+.neon span:nth-child(1) {
   top: 0;
   left: -100%;
   width: 100%;
   height: 0.03em;
   background: linear-gradient(90deg, transparent, var(--neon));
 }
-.neon:hover span:nth-child(1), .neon:focus span:nth-child(1){
+.neon:hover span:nth-child(1),
+.neon:focus span:nth-child(1) {
   left: 100%;
   transition: 1s;
 }
 
-.neon span:nth-child(2){
+.neon span:nth-child(2) {
   top: -100%;
   right: 0;
   width: 0.03em;
   height: 100%;
   background: linear-gradient(180deg, transparent, var(--neon));
 }
-.neon:hover span:nth-child(2), .neon:focus span:nth-child(2){
+.neon:hover span:nth-child(2),
+.neon:focus span:nth-child(2) {
   top: 100%;
   transition: 1s;
 }
 
-.neon span:nth-child(3){
+.neon span:nth-child(3) {
   bottom: 0;
   right: -100%;
   width: 100%;
   height: 0.03em;
   background: linear-gradient(270deg, transparent, var(--neon));
 }
-.neon:hover span:nth-child(3), .neon:focus span:nth-child(3){
+.neon:hover span:nth-child(3),
+.neon:focus span:nth-child(3) {
   right: 100%;
   transition: 1s;
 }
 
-.neon span:nth-child(4){
+.neon span:nth-child(4) {
   bottom: -100%;
   left: 0;
   width: 0.03em;
   height: 100%;
   background: linear-gradient(360deg, transparent, var(--neon));
 }
-.neon:hover span:nth-child(4), .neon:focus span:nth-child(4){
+.neon:hover span:nth-child(4),
+.neon:focus span:nth-child(4) {
   bottom: 100%;
   transition: 1s;
 }
-.neon2 span:nth-child(1){
+.neon2 span:nth-child(1) {
   top: 0;
   left: -100%;
   width: 100%;
@@ -604,16 +599,17 @@ svg {
   background: linear-gradient(90deg, transparent, var(--neon2));
   animation: snake 1s linear infinite;
 }
-@keyframes snake{
-  0%{
-  left: -100%;
+@keyframes snake {
+  0% {
+    left: -100%;
   }
-  50%,100%{
-      left: 100%;
+  50%,
+  100% {
+    left: 100%;
   }
 }
 
-.neon2 span:nth-child(2){
+.neon2 span:nth-child(2) {
   top: -100%;
   right: 0;
   width: 0.03em;
@@ -622,16 +618,17 @@ svg {
   animation: snake1 1s linear infinite;
   animation-delay: 0.25s;
 }
-@keyframes snake1{
-  0%{
-  top: -100%;
+@keyframes snake1 {
+  0% {
+    top: -100%;
   }
-  50%,100%{
-      top: 100%;
+  50%,
+  100% {
+    top: 100%;
   }
 }
 
-.neon2 span:nth-child(3){
+.neon2 span:nth-child(3) {
   bottom: 0;
   right: -100%;
   width: 100%;
@@ -640,15 +637,16 @@ svg {
   animation: snake2 1s linear infinite;
   animation-delay: 0.5s;
 }
-@keyframes snake2{
-  0%{
-  right: -100%;
+@keyframes snake2 {
+  0% {
+    right: -100%;
   }
-  50%,100%{
-      right: 100%;
+  50%,
+  100% {
+    right: 100%;
   }
 }
-.neon2 span:nth-child(4){
+.neon2 span:nth-child(4) {
   bottom: -100%;
   left: 0;
   width: 0.03em;
@@ -657,11 +655,29 @@ svg {
   animation: snake3 1s linear infinite;
   animation-delay: 0.75s;
 }
-@keyframes snake3{
-  0%{
-  bottom: -100%;
+@keyframes snake3 {
+  0% {
+    bottom: -100%;
   }
-  50%,100%{
-      bottom: 100%;
+  50%,
+  100% {
+    bottom: 100%;
   }
+}
+
+#boton-ir-arriba {
+  bottom: 10px;
+  right: 20px;
+  font-size: 35px;
+  position: fixed;
+  bottom: 20px;
+  transform: translateX(-50%);
+  z-index: 1000;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  animation: rebote 2s infinite;
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px rgba(255, 0, 255, 0.5),
+    0 0 30px rgba(255, 0, 255, 0.5), 0 0 40px rgba(255, 0, 255, 0.5),
+    0 0 50px rgba(255, 0, 255, 0.5);
 }

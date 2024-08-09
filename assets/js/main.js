@@ -131,21 +131,41 @@ $(document).ready(function () {
 
   //BOTON IR ABAJO
   const btnIrAbajo = document.getElementById('btn-ir-abajo');
-  const seccionAbout = document.getElementById('about');
+  const secciones = [
+    document.getElementById('about'),
+    document.getElementById('proyectos'),
+    document.getElementById('habilidades'),
+    document.getElementById('contacto')
+  ];
+
+
+  let seccionActual = 0;
 
   btnIrAbajo.addEventListener('click', () => {
-    seccionAbout.scrollIntoView({ behavior: 'smooth' });
-  });
-
-  window.addEventListener('scroll', () => {
-    if (window.scrollY > 0) {
-      btnIrAbajo.style.opacity = '0';
-      btnIrAbajo.style.transition = 'opacity 0.5s';
-    } else {
-      btnIrAbajo.style.opacity = '1';
-      btnIrAbajo.style.transition = 'opacity 0.5s';
+    secciones[seccionActual].scrollIntoView({ behavior: 'smooth' });
+    seccionActual++;
+  
+    if (seccionActual == 'habilidades') {
+      btnIrAbajo.style.display = 'none';
     }
   });
 
+
+  const botonIrArriba = document.getElementById('boton-ir-arriba');
+
+window.addEventListener('scroll', () => {
+  const mitadDelSitio = window.innerHeight / 2;
+  const posicionActual = window.scrollY;
+
+  if (posicionActual >= mitadDelSitio) {
+    botonIrArriba.style.display = 'block';
+  } else {
+    botonIrArriba.style.display = 'none';
+  }
+});
+
+botonIrArriba.addEventListener('click', () => {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+});
 
 });
