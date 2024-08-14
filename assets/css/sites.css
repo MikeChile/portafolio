@@ -110,8 +110,14 @@ h1 {
   transform: translateY(-60px);
 }
 
+/*MIKESTORE*/
 .imgc1 {
   background: url(../img/mikestore.png) 30% 1% / cover no-repeat;
+}
+
+/*PIZZERIA*/
+.imgc2 {
+  background: url(../img/pizzeria.png) 30% 1% / cover no-repeat;
 }
   
   .example-3 .date {
