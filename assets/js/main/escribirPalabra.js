@@ -1,7 +1,7 @@
 // Variables globales
-let palabras = ["Desarrollador", "Diseñador", "Creativo"];
+let palabras = ['Desarrollador web', 'Programador PHP', 'Programador JavaScript', 'Programador Full-Stack', 'Administrador de Bases de Datos'];
 let indice = 0;
-const tiempo = 1000;
+const tiempo = 4000;
 
 // Función para escribir y eliminar palabras
 export function escribirPalabra() {

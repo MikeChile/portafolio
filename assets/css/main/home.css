@@ -44,6 +44,10 @@ header.fondo {
   background-color: rgba(42, 39, 45, 0.829);
 }
 
+#presentacion {
+  z-index: 9;
+}
+
 #buscador::placeholder {
   text-align: center;
 }
@@ -197,6 +201,45 @@ header.fondo {
 .sugerencia-enlace {
   padding: 2px;
 }
+
+.simbolo-tipeo {
+  animation: parpadeo 1s infinite;
+  -webkit-animation: parpadeo 1s infinite;
+}
+.estilo-titulo {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #fff; /* Color principal del texto */
+  text-shadow: 0 0 5px #fff, /* Sombra blanca para dar brillo */ 0 0 10px #fff,
+    /* Sombra blanca para dar brillo */ 0 0 20px rgba(255, 0, 255, 0.5),
+    /* Sombra morada para el efecto neon */ 0 0 30px rgba(255, 0, 255, 0.5),
+    /* Sombra morada para el efecto neon */ 0 0 40px rgba(255, 0, 255, 0.5),
+    /* Sombra morada para el efecto neon */ 0 0 50px rgba(255, 0, 255, 0.5); /* Sombra morada para el efecto neon */
+}
+@keyframes rebote {
+  0% {
+    transform: translateX(-50%) scale(1);
+  }
+  50% {
+    transform: translateX(-50%) scale(1.1);
+  }
+  100% {
+    transform: translateX(-50%) scale(1);
+  }
+}
+
+@keyframes parpadeo {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 /*MEDIA QUERYS*/
 /*movil*/
 @media (max-width: 576px) {
