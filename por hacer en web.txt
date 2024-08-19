@@ -1,0 +1,4 @@
+1. loader
+2. cambiar puntero
+3. que secciones vayan en horizontal
+4. cambair la barra de scroll

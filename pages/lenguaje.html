@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lenguaje</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+
+        h1 {
+            color: #333;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="lenguajeTitulo">Cargando lenguaje...</h1>
+
+    <script>
+        // Función para obtener el valor de un parámetro en la URL
+        function getParameterByName(name) {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(name);
+        }
+
+        // Obtener el valor del parámetro 'leng'
+        const lenguaje = getParameterByName('leng');
+
+        // Mostrar el valor del parámetro en el h1
+        document.getElementById('lenguajeTitulo').textContent = lenguaje ? `Lenguaje: ${lenguaje}` : 'Lenguaje no especificado';
+    </script>
+</body>
+
+</html>

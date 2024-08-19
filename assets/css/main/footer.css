@@ -1,0 +1,258 @@
+/* Contenedor del footer */
+.footer {
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  overflow: hidden;
+}
+
+/* Pseudo-elemento ::before para el fondo negro */
+.footer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #3333338c; /* Fondo negro con opacidad */
+  z-index: 0; /* Asegura que esté detrás del contenido */
+}
+
+/* Contenedor del video de fondo en el footer */
+.footer-video-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Coloca el video detrás del contenido */
+  overflow: hidden;
+}
+
+.footer-video-background video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ajusta el tamaño del video para cubrir todo el contenedor */
+  transform: translate(-50%, -50%);
+}
+
+/* Contenido del footer */
+.footer-content {
+  position: relative; /* Asegura que el contenido se posicione sobre el video y el fondo negro */
+  z-index: 1; /* Asegura que el contenido esté por encima del video y el fondo negro */
+  padding: 20px;
+}
+
+.footer-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.logo-text {
+  font-size: 3em;
+  margin: 0;
+  position: relative;
+}
+
+.logo-neon-mike,
+.logo-neon-dev {
+  display: inline-block;
+  color: #fff;
+}
+
+.logo-neon-mike {
+  color: #fff; /* Color principal del texto */
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px rgba(255, 0, 255, 0.5),
+    0 0 30px rgba(255, 0, 255, 0.5), 0 0 40px rgba(255, 0, 255, 0.5),
+    0 0 50px rgba(255, 0, 255, 0.5);
+  font-size: 75px;
+  font-weight: 600;
+}
+
+.logo-neon-dev {
+  color: var(--color-principal); /* Color principal del texto */
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px rgba(255, 0, 255, 0.5),
+    0 0 30px rgba(255, 0, 255, 0.5), 0 0 40px rgba(255, 0, 255, 0.5),
+    0 0 50px rgba(255, 0, 255, 0.5);
+  font-size: 75px;
+  font-weight: 600;
+}
+/* Efecto hover para hacer el texto más brillante */
+.logo-neon-mike:hover {
+  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px rgba(255, 0, 255, 0.8),
+    0 0 40px rgba(255, 0, 255, 0.8), 0 0 60px rgba(255, 0, 255, 0.8),
+    0 0 80px rgba(255, 0, 255, 0.8);
+}
+
+.logo-neon-dev:hover {
+  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px var(--color-principal),
+    0 0 40px var(--color-principal), 0 0 60px var(--color-principal),
+    0 0 80px var(--color-principal);
+}
+
+/* Enlaces de navegación */
+.footer-nav a {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  justify-content: center;
+  gap: 15px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.5em;
+  transition: color 0.3s;
+}
+
+/* Redes sociales */
+.footer-social {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin: 20px 0;
+}
+
+.footer-social-link {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.5em;
+  display: flex;
+  align-items: center;
+  transition: color 0.3s;
+}
+
+.footer-social-link:hover {
+  color: #f0f0f0;
+}
+
+/* Botón neon */
+a {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  padding: 25px 30px;
+  font-weight: bold;
+  text-decoration: none;
+  letter-spacing: 4px;
+  color: var(--color-principal);
+  transition: 0.5s;
+  border-radius: 2px;
+}
+
+a span {
+  display: block;
+  position: absolute;
+}
+
+a span:nth-child(1) {
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--color-principal));
+  animation: span_1 2s linear infinite; /* Cambia de 1s a 2s */
+}
+
+@keyframes span_1 {
+  0% {
+    left: -100%;
+  }
+  50%,
+  100% {
+    left: 100%;
+  }
+}
+
+a span:nth-child(2) {
+  top: 0%;
+  right: 0%;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, var(--color-principal));
+  animation: span_2 2s linear 0.5s infinite; /* Cambia de 1s a 2s */
+}
+
+/* Estilo para los iconos .bx */
+.bx {
+  transition: color 0.3s ease; /* Suaviza la transición del color */
+}
+
+.bx:hover {
+  color: black; /* Color cuando se pasa el cursor sobre el icono */
+}
+
+/* Estilo del tooltip */
+.tooltip::before {
+  content: attr(data-title); /* Usa el valor del atributo data-title */
+  position: absolute;
+  bottom: 125%; /* Posiciona el tooltip arriba del enlace */
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 5px 10px;
+  background-color: rgba(0, 0, 0, 0.75);
+  color: #fff;
+  border-radius: 4px;
+  white-space: nowrap;
+  font-size: 0.875em;
+  opacity: 0; /* Inicialmente oculto */
+  visibility: hidden; /* Inicialmente oculto */
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  z-index: 999; /* Asegura que el tooltip esté por encima de otros elementos */
+}
+
+.tooltip:hover::before {
+  opacity: 1; /* Muestra el tooltip al pasar el cursor sobre el enlace */
+  visibility: visible; /* Muestra el tooltip */
+}
+
+@keyframes span_2 {
+  0% {
+    top: -100%;
+  }
+  50%,
+  100% {
+    top: 100%;
+  }
+}
+
+a span:nth-child(3) {
+  bottom: 0%;
+  right: 0%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent, var(--color-principal));
+  animation: span_3 2s linear 1s infinite; /* Cambia de 1s a 2s */
+}
+
+@keyframes span_3 {
+  0% {
+    right: -100%;
+  }
+  50%,
+  100% {
+    right: 100%;
+  }
+}
+
+a span:nth-child(4) {
+  bottom: 0%;
+  left: 0%;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, var(--color-principal));
+  animation: span_4 2s linear 1.5s infinite; /* Cambia de 1s a 2s */
+}
+
+@keyframes span_4 {
+  0% {
+    bottom: -100%;
+  }
+  50%,
+  100% {
+    bottom: 100%;
+  }
+}

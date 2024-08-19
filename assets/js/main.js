@@ -37,6 +37,7 @@ $(document).ready(function () {
   let indice = 0;
   let tiempo = 4000; // Tiempo en milisegundos entre cada palabra
 
+
   function escribirPalabra() {
     const palabra = palabras[indice];
     const span = document.querySelector('.typing-2');
@@ -129,43 +130,15 @@ $(document).ready(function () {
   }
 
 
-  //BOTON IR ABAJO
-  const btnIrAbajo = document.getElementById('btn-ir-abajo');
-  const secciones = [
-    document.getElementById('about'),
-    document.getElementById('proyectos'),
-    document.getElementById('habilidades'),
-    document.getElementById('contacto')
-  ];
-
-
-  let seccionActual = 0;
-
-  btnIrAbajo.addEventListener('click', () => {
-    secciones[seccionActual].scrollIntoView({ behavior: 'smooth' });
-    seccionActual++;
-  
-    if (seccionActual == 'habilidades') {
-      btnIrAbajo.style.display = 'none';
+  window.addEventListener("wheel", function (e) {
+    if (e.deltaY !== 0) {
+      // Desplazamiento horizontal en lugar de vertical
+      window.scrollBy({
+        left: e.deltaY * 3, // Puedes ajustar la velocidad del scroll
+        behavior: "smooth"
+      });
     }
   });
 
-
-  const botonIrArriba = document.getElementById('boton-ir-arriba');
-
-window.addEventListener('scroll', () => {
-  const mitadDelSitio = window.innerHeight / 2;
-  const posicionActual = window.scrollY;
-
-  if (posicionActual >= mitadDelSitio) {
-    botonIrArriba.style.display = 'block';
-  } else {
-    botonIrArriba.style.display = 'none';
-  }
-});
-
-botonIrArriba.addEventListener('click', () => {
-  window.scrollTo({ top: 0, behavior: 'smooth' });
-});
 
 });

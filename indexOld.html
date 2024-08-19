@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <title>Portafolio de Miguel Andrades</title>
+</head>
+
+<body class="d-flex text-center text-white bg-dark">
+
+    <div class="loader" id="loader">
+        <div class="bars-common bar-one"></div>
+        <div class="bars-common bar-two"></div>
+        <div class="bars-common bar-three"></div>
+        <div class="squares-common square-one"></div>
+        <div class="squares-common square-two"></div>
+    </div>
+
+    <script>
+        // Desactivar scroll mientras el loader está visible
+        document.body.style.overflow = 'hidden';
+
+        // Esperar 4 segundos (4000 milisegundos) antes de iniciar la animación de desaparición
+        setTimeout(function () {
+            document.getElementById("loader").classList.add("fade-out");
+            document.body.style.overflow = 'auto'; // Reactivar scroll después de la animación
+        }, 4000);
+    </script>
+
+
+
+    <div class="d-flex w-100 h-100 mx-auto flex-column">
+
+        <!-- Encabezado del portafolio -->
+        <header class="fixed-top">
+            <nav class="navbar nav-masthead justify-content-between p-2 navbar-expand-lg">
+                <div class="container">
+                    <a class="navbar-brand" href="#">MikeDev</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <i class='bx bx-menu'></i>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item"><a class="nav-link active" aria-current="page" href="#about">Sobre
+                                    mí</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#proyectos">Proyectos</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#habilidades">Habilidades</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#contacto">Contáctame</a></li>
+                            <li class="nav-item"><a class="nav-link" href="https://github.com/MikeChile"><i
+                                        class='bx bxl-github'></i> Github</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <div class="container-fluid">
+
+            <!-- Presentacion -->
+            <div id="presentacion">
+                <div class="row pt-5">
+                    <div class="col pt-5">
+                        <h1 class="title-mike">Miguel Andrades</h1>
+                        <h2 class="text">
+                            Soy un gran <span class="typing-2 estilo-titulo"></span><span class="simbolo-tipeo">|</span>
+                        </h2>
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <div class="col">
+                        <a href="https://github.com/MikeChile">
+                            <div class="redes"><i class='bx bxl-github'></i></div>
+                        </a>
+                        <a href="https://www.linkedin.com/in/miguel-andrades-951110133/">
+                            <div class="redes"><i class='bx bxl-linkedin'></i></div>
+                        </a>
+                        <a href="#">
+                            <div class="redes"><i class='bx bxs-briefcase' style="color:#fff"></i></div>
+                        </a>
+
+                    </div>
+                </div>
+                <div id="buscador-container">
+
+                    <div class="row justify-content-center mt-4">
+                        <div class="col col-md-6">
+                            <input type="text" id="buscador" class="form-control"
+                                placeholder="¿En que lenguaje de programación trabajaremos?">
+                            <div id="sugerencias"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <button id="btn-ir-abajo" class="btn rounded-circle">
+                    <i class='bx bxs-chevrons-down'></i>
+                </button>
+
+                <div class="btn" id="boton-ir-arriba"><i class='bx bxs-chevrons-up'></i></div>
+            </div>
+
+            <!-- Sección sobre mi -->
+            <section id="about">
+
+                <div class="row mt-5 pt-4">
+                    <div class="col-12">
+                        <h2 class="subtitle">Sobre Mí</h2>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <img src="assets/img/mike.jpg" alt="" class="img-fluid mb-2" id="img-perfil">
+                    </div>
+
+                    <div class="col-12 col-md-6 text-start">
+                        <h4>
+                            Hola, Soy
+                            <svg width="400px" height="120px" viewBox="0 0 600 120">
+                                <defs>
+                                    <filter id="filter">
+                                        <feFlood flood-color="#212529" result="black" />
+                                        <feFlood flood-color="#ff00ff80" result="flood1" />
+                                        <feFlood flood-color="limegreen" result="flood2" />
+                                        <feOffset in="SourceGraphic" dx="3" dy="0" result="off1a" />
+                                        <feOffset in="SourceGraphic" dx="2" dy="0" result="off1b" />
+                                        <feOffset in="SourceGraphic" dx="-3" dy="0" result="off2a" />
+                                        <feOffset in="SourceGraphic" dx="-2" dy="0" result="off2b" />
+                                        <feComposite in="flood1" in2="off1a" operator="in" result="comp1" />
+                                        <feComposite in="flood2" in2="off2a" operator="in" result="comp2" />
+
+                                        <feMerge x="0" width="100%" result="merge1">
+                                            <feMergeNode in="black" />
+                                            <feMergeNode in="comp1" />
+                                            <feMergeNode in="off1b" />
+
+                                            <animate attributeName="y" id="y" dur="4s"
+                                                values='104px; 104px; 30px; 105px; 30px; 2px; 2px; 50px; 40px; 105px; 105px; 20px; 6ßpx; 40px; 104px; 40px; 70px; 10px; 30px; 104px; 102px'
+                                                keyTimes='0; 0.362; 0.368; 0.421; 0.440; 0.477; 0.518; 0.564; 0.593; 0.613; 0.644; 0.693; 0.721; 0.736; 0.772; 0.818; 0.844; 0.894; 0.925; 0.939; 1'
+                                                repeatCount="indefinite" />
+
+                                            <animate attributeName="height" id="h" dur="4s"
+                                                values='10px; 0px; 10px; 30px; 50px; 0px; 10px; 0px; 0px; 0px; 10px; 50px; 40px; 0px; 0px; 0px; 40px; 30px; 10px; 0px; 50px'
+                                                keyTimes='0; 0.362; 0.368; 0.421; 0.440; 0.477; 0.518; 0.564; 0.593; 0.613; 0.644; 0.693; 0.721; 0.736; 0.772; 0.818; 0.844; 0.894; 0.925; 0.939; 1'
+                                                repeatCount="indefinite" />
+                                        </feMerge>
+
+
+                                        <feMerge x="0" width="100%" y="60px" height="65px" result="merge2">
+                                            <feMergeNode in="black" />
+                                            <feMergeNode in="comp2" />
+                                            <feMergeNode in="off2b" />
+
+                                            <animate attributeName="y" id="y" dur="4s"
+                                                values='103px; 104px; 69px; 53px; 42px; 104px; 78px; 89px; 96px; 100px; 67px; 50px; 96px; 66px; 88px; 42px; 13px; 100px; 100px; 104px;'
+                                                keyTimes='0; 0.055; 0.100; 0.125; 0.159; 0.182; 0.202; 0.236; 0.268; 0.326; 0.357; 0.400; 0.408; 0.461; 0.493; 0.513; 0.548; 0.577; 0.613; 1'
+                                                repeatCount="indefinite" />
+
+                                            <animate attributeName="height" id="h" dur="4s"
+                                                values='0px; 0px; 0px; 16px; 16px; 12px; 12px; 0px; 0px; 5px; 10px; 22px; 33px; 11px; 0px; 0px; 10px'
+                                                keyTimes='0; 0.055; 0.100; 0.125; 0.159; 0.182; 0.202; 0.236; 0.268; 0.326; 0.357; 0.400; 0.408; 0.461; 0.493; 0.513;  1'
+                                                repeatCount="indefinite" />
+                                        </feMerge>
+
+                                        <feMerge>
+                                            <feMergeNode in="SourceGraphic" />
+
+                                            <feMergeNode in="merge1" />
+                                            <feMergeNode in="merge2" />
+
+                                        </feMerge>
+                                    </filter>
+                                </defs>
+
+                                <text x="0" y="70" fill="white">
+                                    <tspan id="name" data-text="Miguel Andrades">Miguel Andrades</tspan>
+                                </text>
+                            </svg>
+                        </h4>
+                        <p class="lead">
+                            Desarrollador web apasionado por la tecnología y la innovación. Me apasiona crear soluciones
+                            digitales que mejoren la vida de las personas y transformen negocios. Con experiencia en
+                            diseño y desarrollo web, me enfoco en brindar soluciones personalizadas y efectivas que
+                            satisfagan las necesidades de mis clientes. Desde sitios web corporativos hasta e-commerce y
+                            aplicaciones web, estoy aquí para ayudarte a alcanzar tus objetivos en línea.
+                        </p>
+
+                        <div class="row cajaAction">
+                            <div class="col">
+
+                                <div class="btn-neon">
+                                    <a class="neon2" href="#proyectos">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <i class='bx bxs-briefcase'></i>
+                                        Ver proyectos
+                                    </a>
+                                </div>
+
+                            </div>
+                            <div class="col">
+                                <div class="btn-neon">
+                                    <a class="neon2" href="#proyectos">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <i class='bx bxl-github'></i>
+                                        Ver repositorio
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- Sección de proyectos -->
+            <section id="proyectos" class="mb-5">
+                <div class="container">
+                    <h2 class="mb-4">Proyectos</h2>
+                    <div class="row  text-center">
+
+                        <!-- Sitios Web -->
+                        <div class="col-12 col-md-4 mb-2">
+                            <div class="card">
+                                <img src="assets/img/sitio_web.jpg" class="card-img-top" alt="Sitio Web">
+                                <div class="card-body">
+                                    <h5 class="card-title">Sitios Web</h5>
+                                    <p class="card-text">Plantillas de sitios profesionales y personalizables
+                                    </p>
+                                    <a href="./pages/sites.html" title="Sitios Web">
+                                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                            data-bs-target="#modalSitioWeb">
+                                            Ver sitios
+                                        </button>
+                                    </a>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Secciones -->
+                        <div class="col-12 col-md-4 mb-2">
+                            <div class="card">
+                                <img src="assets/img/sections.jpg" class="card-img-top" alt="Sección">
+                                <div class="card-body">
+                                    <h5 class="card-title">Secciones</h5>
+                                    <p class="card-text">Tales como sidebar con carrusel, navbar y más.</p>
+                                    <a href="./pages/sections.html" title="Secciones">
+                                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                            data-bs-target="#modalSeccion">
+                                            Ver Secciones
+                                        </button>
+                                    </a>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Funciones -->
+                        <div class="col-12 col-md-4 mb-2">
+                            <div class="card">
+                                <img src="assets/img/funcions.png" class="card-img-top" alt="Función">
+                                <div class="card-body">
+                                    <h5 class="card-title">Funciones</h5>
+                                    <p class="card-text">Función tales como calculadoras, convertidores, etc.</p>
+                                    <a href="./pages/functions.html" title="Funciones">
+                                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                            data-bs-target="#modalFuncion">
+                                            Ver funciones
+                                        </button>
+                                    </a>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Juegos -->
+                        <div class="col-12 col-md-4 mb-2">
+                            <div class="card">
+                                <img src="assets/img/dados.jpg" class="card-img-top" alt="Función">
+                                <div class="card-body">
+                                    <h5 class="card-title">Juegos</h5>
+                                    <p class="card-text">Tales como dados, ajedrez, adivinanza, etc.</p>
+                                    <a href="./pages/games.html" title="Juegos">
+                                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                            data-bs-target="#modalFuncion">
+                                            Ver Juegos
+                                        </button>
+                                    </a>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </section>
+
+
+            <!-- Sección de habilidades -->
+            <section id="habilidades" class="mb-5">
+                <div class="container">
+                    <h2 class="mb-4 ">Skill</h2>
+                    <div class="row justify-content-center">
+
+                        <div class="row">
+                            <div class="col col-md-3">
+                                <div class="skill">
+                                    <div class="outer">
+                                        <div class="inner">
+                                            <div class="number" data-skill="HTML">95%</div>
+                                        </div>
+                                    </div>
+                                    <span class="html-circle-skill html">
+                                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px"
+                                            height="160px">
+                                            <defs>
+                                                <linearGradient id="GradientColor">
+                                                    <stop offset="0%" stop-color="#e91e63" />
+                                                    <stop offset="100%" stop-color="#c20d67" />
+                                                </linearGradient>
+                                            </defs>
+                                            <circle id="html-circle" cx="80" cy="80" r="70" stroke-linecap="round" />
+                                        </svg>
+                                    </span>
+                                    <p>HTML</p>
+                                </div>
+                            </div>
+                            <div class="col col-md-3">
+                                <div class="skill">
+                                    <div class="outer">
+                                        <div class="inner">
+                                            <div class="number" data-skill="CSS">85%</div>
+                                        </div>
+                                    </div>
+                                    <span class="html-circle-skill css">
+                                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px"
+                                            height="160px">
+                                            <defs>
+                                                <linearGradient id="GradientColor2">
+                                                    <stop offset="0%" stop-color="#fff" />
+                                                    <stop offset="100%" stop-color="#333" />
+                                                </linearGradient>
+                                                ..0
+                                            </defs>
+                                            <circle class="css" cx="80" cy="80" r="70" stroke-linecap="round" />
+                                        </svg>
+                                    </span>
+                                    <p>CSS</p>
+                                </div>
+                            </div>
+                            <div class="col col-md-3">
+                                <div class="skill">
+                                    <div class="outer">
+                                        <div class="inner">
+                                            <div class="number" data-skill="JavaScript">60%</div>
+                                        </div>
+                                    </div>
+                                    <span class="html-circle-skill">
+                                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px"
+                                            height="160px">
+                                            <defs>
+                                                <linearGradient id="GradientColor">
+                                                    <stop offset="0%" stop-color="#2196F3" />
+                                                    <stop offset="100%" stop-color="#64B5F6" />
+                                                </linearGradient>
+                                            </defs>
+                                            <circle class="javascript" cx="80" cy="80" r="70" stroke-linecap="round" />
+                                        </svg>
+                                    </span>
+                                    <p>JavaScript</p>
+                                </div>
+                            </div>
+                            <div class="col col-md-3">
+                                <div class="skill">
+                                    <div class="outer">
+                                        <div class="inner">
+                                            <div class="number" data-skill="PHP">75%</div>
+                                        </div>
+                                    </div>
+                                    <span class="html-circle-skill">
+                                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px"
+                                            height="160px">
+                                            <defs>
+                                                <linearGradient id="GradientColor">
+                                                    <stop offset="0%" stop-color="#9C27B0" />
+                                                    <stop offset="100%" stop-color="#E51C6C" />
+                                                </linearGradient>
+                                            </defs>
+                                            <circle class="php" cx="80" cy="80" r="70" stroke-linecap="round" />
+                                        </svg>
+                                    </span>
+                                    <p>PHP</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </section>
+
+            <!-- Sección de contacto -->
+            <section id="contacto" class="mb-5">
+                <div class="container">
+                    <h2 class="mb-4">Contáctame</h2>
+
+                    <div class="row justify-content-center">
+                        <div class="col col-md-6">
+                            <form action="" id="formulario">
+                                <div class="row">
+                                    <div class="col-12 col-md-6">
+                                        <label for="nombre">Nombre</label>
+                                        <input type="text" id="nombre" name="nombre" placeholder="Nombre"
+                                            class="form-control mb-3" required pattern="[a-zA-Z ]{1,100}">
+                                    </div>
+                                    <div class="col-12 col-md-6">
+                                        <label for="apellido">Apellido</label>
+                                        <input type="text" id="apellido" name="apellido" placeholder="Apellido"
+                                            class="form-control mb-3" required pattern="[a-zA-Z ]{1,100}">
+                                    </div>
+
+                                    <div class="col-12">
+                                        <label for="email">Correo electrónico</label>
+                                        <input type="email" id="email" name="email" placeholder="Correo electrónico"
+                                            class="form-control mb-3" required>
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="mensaje">Mensaje</label>
+                                        <textarea id="mensaje" name="mensaje" placeholder="Mensaje"
+                                            class="form-control mb-3" required maxlength="400"></textarea>
+                                    </div>
+                                    <div class="col-12">
+                                        <button class="btn btn-success ">Enviar</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+
+            </section>
+
+        </div>
+
+        <!-- Pie de página -->
+        <footer class="mt-auto text-white-50">
+            <p>Miguel Andrades 2024</p>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

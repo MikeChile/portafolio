@@ -1,0 +1,77 @@
+/* Estilos para las secciones */
+.section {
+  height: 100vh; /* Altura completa del viewport */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.section.active {
+  opacity: 1;
+}
+
+.section:not(.active) {
+  opacity: 0;
+}
+
+.section {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  color: white;
+  opacity: 0;
+  transform: translateX(100%) scale(0.95);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.active {
+  opacity: 1;
+  transform: translateX(0) scale(1);
+  position: relative;
+}
+
+#section1 {
+  background-color: lightcoral;
+}
+
+#section2 {
+  background-color: lightblue;
+}
+
+#section3 {
+  background-color: lightgreen;
+}
+
+#section4 {
+  background-color: lightyellow;
+}
+
+#section5 {
+  background-color: lightpink;
+}
+
+#section6 {
+  background-color: #33333391;
+}
+
+@media (max-width: 1024px) {
+  .container {
+    flex-direction: column;
+    width: 100vw;
+    height: 600vh;
+    /* Ajustado para 6 secciones */
+  }
+
+  .section {
+    height: 100vh;
+    width: 100vw;
+    transform: translateY(100%) scale(0.95);
+  }
+}

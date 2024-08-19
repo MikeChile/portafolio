@@ -681,3 +681,157 @@ svg {
     0 0 30px rgba(255, 0, 255, 0.5), 0 0 40px rgba(255, 0, 255, 0.5),
     0 0 50px rgba(255, 0, 255, 0.5);
 }
+
+/*LOADER*/
+.loader {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  background-color: #1f1f1f; /* Fondo opaco */
+  overflow: hidden;
+  transition: transform 1s ease, opacity 1s ease; /* Transiciones para animación */
+}
+
+.loader.fade-out {
+  transform: scale(0); /* Reducir el tamaño a 0 */
+  opacity: 0; /* Hacerlo transparente */
+}
+
+.loader::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.1),
+    rgba(0, 0, 0, 0.2),
+    rgba(255, 255, 255, 0.05)
+  );
+  animation: abstractSmoke 15s infinite linear;
+  transform-origin: center;
+  -webkit-animation: abstractSmoke 15s infinite linear;
+}
+
+@keyframes abstractSmoke {
+  0% {
+    transform: scale(1) rotate(0deg);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.5) rotate(180deg);
+    opacity: 0.5;
+  }
+  100% {
+    transform: scale(2) rotate(360deg);
+    opacity: 1;
+  }
+}
+
+.bars-common {
+  height: 4vw;
+  width: 1vw;
+  margin: auto;
+  position: absolute;
+  box-shadow: 0 0 0 0.1vw cyan, 0 0 1vw 0 cyan, inset 0 0 0.5vw 0 cyan;
+}
+
+.bar-one {
+  left: 0;
+  right: 4vw;
+  top: 0;
+  bottom: 0;
+  animation: barAnim 1s 0.33s ease infinite;
+}
+
+.bar-two {
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  animation: barAnim 1s 0.66s ease infinite;
+}
+
+.bar-three {
+  left: 4vw;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  animation: barAnim 1s 0.99s ease infinite;
+}
+
+@keyframes barAnim {
+  0%,
+  100% {
+    box-shadow: 0 0 0 0.1vw cyan, 0 0 1vw 0 cyan, inset 0 0 0.5vw 0 cyan;
+  }
+  50% {
+    box-shadow: 0 0 0 0.1vw var(--neon2), 0 0 1vw 0 var(--neon2),
+      inset 0 0 0.5vw 0 var(--neon2);
+  }
+}
+
+.squares-common {
+  height: 8vw;
+  width: 8vw;
+  margin: auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  box-shadow: 0 0 0 0.1vw cyan, 0 0 1vw 0 cyan, inset 0 0 0.5vw 0 cyan;
+}
+
+.square-one {
+  animation: squareOne 4s 0.99s ease infinite;
+}
+
+@keyframes squareOne {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-180deg);
+  }
+}
+
+.square-two {
+  animation: squareTwo 4s 0.99s ease infinite;
+}
+
+@keyframes squareTwo {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(180deg);
+  }
+}
+
+body,
+html {
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto; /* Para permitir el desplazamiento vertical que se convertirá en desplazamiento horizontal */
+}
+
+.container-fluid {
+  white-space: nowrap;
+  height: 100%;
+}
+
+section {
+  display: inline-block;
+  width: 100vw; /* Ancho igual al ancho de la ventana del navegador */
+  height: 100vh; /* Alto igual al alto de la ventana del navegador */
+  vertical-align: top;
+}

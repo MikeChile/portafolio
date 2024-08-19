@@ -1,0 +1,19 @@
+/* Estilos para el layout general */
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 1024px) {
+  .container {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  .section {
+    flex: 1;
+    min-width: 100vw;
+    box-sizing: border-box;
+  }
+}
