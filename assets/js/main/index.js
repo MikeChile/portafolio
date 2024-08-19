@@ -29,7 +29,7 @@ function moveToSection(index) {
     if (isMobile) {
         sections[index].style.transform = `translateY(0) scale(1)`;
     } else {
-        sections[index].style.transform = `translateX(0) scale(1)`;
+        sections[index].style.transform = `translateX(740px) scale(1)`;
     }
 
     // Actualiza los indicadores de sección
