@@ -1,13 +1,13 @@
 /* Pseudo-elemento ::before para el fondo negro */
-#section3::before {
+#section3::after {
   content: "";
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #3333338c; /* Fondo negro con opacidad */
-  z-index: 0; /* Asegura que esté detrás del contenido */
+  background-color: #33333362; /* Fondo negro con opacidad */
+  z-index: -1; /* Asegura que esté detrás del contenido */
 }
 
 /* Estilo para el video de fondo */
@@ -34,4 +34,60 @@
 .row {
   margin: 0;
   padding: 0;
+}
+
+.card {
+  position: relative;
+  overflow: hidden;
+}
+
+.card-img-top {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.card-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8); /* Fondo oscuro con opacidad */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  color: white;
+  text-align: center;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.card:hover .card-img-top {
+  transform: scale(1.1);
+}
+
+.card:hover .card-overlay {
+  opacity: 1; /* Muestra la máscara al pasar el ratón */
+}
+
+.card-link {
+  text-decoration: none;
+  color: inherit;
+  padding: 0;
+}
+
+@media (max-width: 575.98px) {
+  .container-proyectos {
+    height: auto;
+  }
+  .container-proyectos .card {
+    height: 120px;
+  }
 }

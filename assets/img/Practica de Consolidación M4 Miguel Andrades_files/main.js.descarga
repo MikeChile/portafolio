@@ -1,0 +1,72 @@
+document.addEventListener('DOMContentLoaded', function () {
+    async function fetchCharacter(id) {
+        const response = await fetch(`https://swapi.dev/api/people/${id}/`);
+        const data = await response.json();
+        return {
+            name: data.name,
+            height: data.height,
+            mass: data.mass,
+        };
+    }
+
+    function* characterGenerator(range) {
+        if (!range) {
+            console.error('El rango es null o undefined');
+            return;
+        }
+
+        const [start, end] = range.split('-').map(Number);
+        let color = '';
+
+        if (start >= 1 && end <= 5) {
+            color = '#f27f6f'; // Rojo
+        } else if (start >= 6 && end <= 11) {
+            color = 'rgb(96, 216, 96)'; // Verde
+        } else if (start >= 12 && end <= 17) {
+            color = 'rgb(64, 191, 241)'; // Azul
+        }
+
+        for (let i = start; i <= end; i++) {
+            yield { character: fetchCharacter(i), color };
+        }
+    }
+
+    async function displayCharacters(range) {
+        const charactersContainer = document.getElementById('characters');
+        charactersContainer.innerHTML = '';
+
+        const generator = characterGenerator(range);
+        let count = 0;
+
+        for (let { character: characterPromise, color } of generator) {
+            if (count >= 5) break; // Limitar a 5 personajes
+
+            const character = await characterPromise;
+
+            const characterDiv = document.createElement('div');
+            characterDiv.className = 'character-card';
+            characterDiv.innerHTML = `<div class="row">
+                <div class="col-2">
+                    <div style="width: 30px; height: 30px; border-radius: 50%; background-color: ${color};"></div>
+                </div>
+                <div class="col-10"><h3>${character.name}</h3>
+                <p><b>Estatura:</b> ${character.height} cm, 
+                <b>Peso:</b> ${character.mass} kg</p></div>
+            </div>`;
+
+            charactersContainer.appendChild(characterDiv);
+            count++;
+        }
+    }
+
+    document.querySelectorAll('.range').forEach(rangeDiv => {
+        rangeDiv.addEventListener('mouseenter', (e) => {
+            const range = e.currentTarget.getAttribute('data-range');
+            if (range) {
+                displayCharacters(range);
+            } else {
+                console.error('No se encontró un rango válido');
+            }
+        });
+    });
+});

@@ -81,30 +81,176 @@
   box-shadow: 0 0 30px rgba(255, 255, 255, 0.7);
 }
 
-.card-about {
-  position: relative;
-  width: 320px;
-  aspect-ratio: 9/14;
-  overflow: hidden;
-  border-radius: 20px;
-  display: flex;
-  align-items: flex-end;
-  justify-content: flex-end;
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.05), 0 15px 40px rgba(0, 0, 0, 0.05);
-  cursor: pointer;
-}
-
-.card-about img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: -1;
-  transition: 0.4s;
-}
-
 #img-perfil:hover {
   transform: scale(1.15);
+}
+
+/*estilo para imagen */
+:root {
+  --prime: #ff6e48;
+  --ciBlue: #00fff1;
+  --ciRed: #ff00aa;
+  --ciGreen: #46fcb4;
+  --second: #0c1016;
+  --width: 250px;
+  --height: 350px;
+  --borderSize: 3px;
+  --borderRadius: 20px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.card-img-perfil {
+  width: var(--width);
+  height: var(--height);
+  position: relative;
+  z-index: 2;
+  border-radius: var(--borderRadius);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.card-img-perfil:hover {
+  box-shadow: 0 0 20px var(--ciGreen), 0 0 30px var(--ciBlue);
+}
+
+.card-img-perfil .content-img-perfil {
+  width: 100%;
+  height: 100%;
+  background-image: url(../../img/mike.jpg);
+  background-size: cover;
+  border-radius: calc(var(--borderRadius) - var(--borderSize));
+  transition: transform 0.3s ease-in-out;
+}
+
+.card-img-perfil:hover .content-img-perfil {
+  transform: scale(1.05);
+}
+
+.card-img-perfil::before,
+.card-img-perfil::after {
+  content: "";
+  width: calc(var(--width) + var(--borderSize) * 2);
+  height: calc(var(--height) + var(--borderSize) * 2);
+  display: block;
+  position: absolute;
+  z-index: -1;
+  border-radius: var(--borderRadius);
+  background-image: linear-gradient(0, var(--ciRed), var(--ciBlue));
+  background-size: 100% 200%;
+  background-position: center center;
+  top: calc(-1 * var(--borderSize));
+  left: calc(-1 * var(--borderSize));
+  animation: spin 3000ms infinite alternate;
+}
+
+.card-img-perfil::after {
+  filter: blur(calc(var(--width) / 2));
+}
+
+@keyframes spin {
+  0% {
+    background-position: top center;
+  }
+  100% {
+    background-position: bottom center;
+  }
+}
+
+/*PALABRAS MIGUEL ANDRADES */
+svg {
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+#name {
+  font-family: "Share Tech Mono", sans-serif;
+  font-size: 50px;
+  fill: white;
+  filter: url(#filter);
+  fill: white;
+  font-family: "Share Tech Mono", sans-serif;
+  font-size: 50px;
+  -webkit-filter: url(#filter);
+}
+
+.greeting {
+  display: flex;
+  align-items: center;
+  font-size: 1.5em; /* Ajusta según el tamaño que prefieras */
+  margin: 0; /* Elimina márgenes para un ajuste más preciso */
+}
+
+.greeting {
+  font-size: 18px;
+  width: 90px;
+}
+
+.name-svg {
+  /* Asegúrate de que el SVG se alinee con el texto */
+  display: inline-block;
+  vertical-align: middle;
+}
+/* Ocultar la versión corta en pantallas grandes y mostrar la versión completa */
+.full-version {
+  display: block; /* Oculta la versión completa por defecto */
+}
+
+/* Mostrar la versión corta en pantallas móviles */
+.short-version {
+  display: none; /* Muestra la versión corta en pantallas móviles */
+}
+
+@media (max-width: 575.98px) {
+  .short-version {
+    display: block; /* Oculta la versión corta en pantallas grandes */
+  }
+
+  .full-version {
+    display: none; /* Muestra la versión completa en pantallas grandes */
+  }
+
+  .card-img-perfil {
+    margin-left: 200px;
+    width: 100px;
+    height: 100px;
+  }
+
+  .content-img-perfil {
+    /* Ajusta el tamaño y el borde si es necesario */
+    width: var(--width); /* Usa tus variables o valores específicos */
+    height: var(--height);
+  }
+
+  .card-img-perfil::before,
+  .card-img-perfil::after {
+    content: "";
+    width: 105px;
+    height: 105px;
+    display: block;
+  }
+
+  .card-img-perfil {
+    margin: 0 auto; /* Centra el contenedor de la imagen */
+  }
+
+  .name-svg {
+    width: 100%; /* Ajusta el tamaño del SVG al ancho del contenedor */
+    height: auto; /* Mantiene la proporción del SVG */
+  }
+
+  .lead {
+    font-size: 16px; /* Ajusta el tamaño del texto si es necesario */
+    margin: 20px 0; /* Ajusta el margen si es necesario */
+  }
+
+  .cajaAction {
+    text-align: center; /* Centra los botones */
+  }
+
+  .btn-neon {
+    display: inline-block; /* Asegura que los botones estén en línea */
+    margin: 10px; /* Ajusta el margen entre los botones si es necesario */
+  }
 }

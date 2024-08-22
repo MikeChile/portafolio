@@ -242,6 +242,7 @@ header.fondo {
 
 .simbolo-tipeo {
   animation: parpadeo 1s infinite;
+  -webkit-animation: parpadeo 1s infinite;
 }
 
 #btn-ir-abajo .bxs-chevrons-down {
