@@ -38,7 +38,7 @@ $(document).ready(function () {
   let tiempo = 4000; // Tiempo en milisegundos entre cada palabra
 
 
-  function escribirPalabra() {
+  /* function escribirPalabra() {
     const palabra = palabras[indice];
     const span = document.querySelector('.typing-2');
     const simbolo = document.querySelector('.simbolo-tipeo');
@@ -67,7 +67,7 @@ $(document).ready(function () {
         escribirPalabra(); // Llamar a la función nuevamente
       }, palabra.length * 100 + 1000); // Tiempo en milisegundos para el efecto de parpadeo y eliminación de la palabra
     }, tiempo);
-  }
+  } */
 
   const header = document.querySelector('header');
 
@@ -80,54 +80,6 @@ $(document).ready(function () {
   });
 
   escribirPalabra();
-
-  const buscador = document.getElementById('buscador');
-  const sugerenciasDiv = document.getElementById('sugerencias');
-
-  const lenguajes = [
-    'HTML',
-    'PHP',
-    'JavaScript',
-    'CSS',
-    'React',
-    'Angular',
-    'Vue',
-    'Node.js',
-    'Ruby',
-    'Python'
-  ];
-
-  //BUSCADOR
-  buscador.addEventListener('input', (e) => {
-    const valor = e.target.value.trim().toLowerCase();
-    const sugerenciasFiltradas = lenguajes.filter((lenguaje) => lenguaje.toLowerCase().includes(valor));
-
-    if (valor === '') {
-      sugerenciasDiv.style.display = 'none';
-    } else {
-      sugerenciasDiv.style.display = 'block';
-      if (sugerenciasFiltradas.length === 0) {
-        mostrarMensajeNoEncontrado();
-      } else {
-        mostrarSugerencias(sugerenciasFiltradas);
-      }
-    }
-  });
-
-  // Función para mostrar mensaje especial si no se encuentran sugerencias
-  function mostrarMensajeNoEncontrado() {
-    sugerenciasDiv.innerHTML = '<p>Lo siento, no se encontraron coincidencias... aún! Pero estoy en constante aprendizaje, así que es posible que pronto pueda ayudarte con este lenguaje..</p>';
-  }
-
-  //MOSTRAR SUGERENCIAS
-  function mostrarSugerencias(sugerencias) {
-    sugerenciasDiv.innerHTML = '';
-    sugerencias.forEach((sugerencia) => {
-      const opcion = document.createElement('div');
-      opcion.textContent = sugerencia;
-      sugerenciasDiv.appendChild(opcion);
-    });
-  }
 
 
   window.addEventListener("wheel", function (e) {
