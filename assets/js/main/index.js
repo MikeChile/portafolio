@@ -6,6 +6,39 @@ import { iniciarBuscador } from './buscador.js';
 import { mostrarLenguajes } from './skills.js'; // Importa la función para mostrar las habilidades
 import { inicializarIndicadores } from './controladorSections.js'; // Importa la función para inicializar los indicadores
 
+//mouse
+$("body").prepend('<div class="cursor"></div>');
+
+$(document)
+    .mousemove(function (e) {
+        $('.cursor')
+            .eq(0)
+            .css({
+                "left": e.pageX,
+                "top": e.pageY - $(window).scrollTop()
+            });
+    });
+
+$("a").mouseenter(function () {
+    $('.cursor').addClass('hover');
+})
+    .mouseleave(function () {
+        $('.cursor').removeClass('hover');
+    });
+
+const cursor = document.querySelector('.cursor');
+
+document.addEventListener('mousemove', (e) => {
+    cursor.style.left = `${e.clientX}px`;
+    cursor.style.top = `${e.clientY}px`;
+});
+
+document.addEventListener('click', () => {
+    cursor.classList.add('click-effect');
+    setTimeout(() => cursor.classList.remove('click-effect'), 500);
+});
+
+
 // Inicializa la sección actual en la que estamos y selecciona todas las secciones
 let currentSection = 0;
 const sections = document.querySelectorAll('.section');
