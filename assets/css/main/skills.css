@@ -71,3 +71,165 @@
   font-size: 12px;
   font-weight: bold;
 }
+
+.skillsContainer {
+  background-color: black;
+}
+
+/* Caja de habilidad */
+.skill-box {
+  width: 100%;
+  margin: 25px 0;
+}
+
+/* Título de habilidad */
+.skill-box .title {
+  display: block;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  text-shadow: 0 0 5px #00f, 0 0 10px #00f; /* Efecto de neón */
+}
+
+/* Barra de habilidad */
+.skill-box .skill-bar {
+  height: 10px;
+  width: 100%;
+  border-radius: 5px;
+  margin-top: 6px;
+  background: rgba(0, 0, 0, 0.5);
+  border: 1px solid #00f; /* Borde azul para el neón */
+}
+
+/* Contenedor de la barra de habilidad */
+.skill-bar {
+  position: relative;
+  height: 8px;
+  width: 100%;
+  border-radius: 6px;
+  background: rgba(0, 0, 0, 0.1);
+  overflow: hidden; /* Asegura que los bordes de la barra no sobresalgan */
+}
+
+/* Porcentaje de habilidad */
+.skill-bar .skill-per {
+  position: relative;
+  display: block;
+  height: 100%;
+  width: 0; /* Se ajustará dinámicamente */
+  border-radius: 6px;
+  background: linear-gradient(45deg, #00f260, #0575e6); /* Gradiente neón */
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.7), 0 0 20px rgba(0, 255, 255, 0.5); /* Efecto neón */
+  animation: progress 0.4s ease-in-out forwards;
+}
+
+/* Efecto de animación de progreso */
+@keyframes progress {
+  from {
+    width: 0;
+    opacity: 0.5;
+  }
+  to {
+    width: 100%;
+    opacity: 1;
+  }
+}
+
+/* Tooltip sobre el porcentaje */
+.skill-per .tooltip {
+  position: absolute;
+  right: 10px;
+  top: -20px;
+  font-size: 12px;
+  font-weight: 500;
+  color: #fff;
+  padding: 2px 6px;
+  border-radius: 3px;
+  background: #00f260; /* Color de fondo del tooltip */
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.7); /* Efecto neón en el tooltip */
+  transition: background 0.3s ease;
+}
+
+/* Triángulo del tooltip */
+.tooltip::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -5px;
+  height: 10px;
+  width: 10px;
+  background-color: #00f260;
+  transform: translateX(-50%) rotate(45deg);
+}
+
+/* Colores específicos para habilidades */
+.skill-per.html {
+  width: 50%;
+  animation-delay: 0.1s;
+}
+
+.skill-per.css {
+  width: 70%;
+  animation-delay: 0.2s;
+}
+
+.skill-per.javascript {
+  width: 50%;
+  animation-delay: 0.3s;
+}
+
+.skill-per.nodejs {
+  width: 30%;
+  animation-delay: 0.4s;
+}
+
+/* Animación de progreso */
+@keyframes progress {
+  0% {
+    width: 0;
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Tooltip con efecto neón */
+.skill-per .tooltip {
+  position: absolute;
+  right: -50px;
+  top: -25px;
+  font-size: 12px;
+  font-weight: 500;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  background: #00f;
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.8); /* Efecto neón */
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+/* Mostrar tooltip al pasar el mouse */
+.skill-per:hover .tooltip {
+  opacity: 1;
+}
+
+/* Flecha del tooltip */
+.tooltip::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -10px;
+  height: 10px;
+  width: 10px;
+  background-color: #00f;
+  transform: translateX(-50%) rotate(45deg);
+}
+@media (max-width: 575.98px) {
+  #section4 {
+    display: block;
+  }
+}

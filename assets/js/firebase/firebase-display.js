@@ -218,3 +218,32 @@ export function displayProjectsSections(projects) {
     }
 }
 
+// Función para mostrar habilidades en HTML
+export function displaySkills(skills) {
+    const skillsContainer = document.getElementById('skillsContainer');
+    skillsContainer.innerHTML = ''; // Limpiar el contenedor antes de agregar los datos
+
+    // Mostrar habilidades
+    for (const skillId in skills) {
+        const skill = skills[skillId];
+
+        // Crear el elemento para cada habilidad
+        const skillElement = document.createElement('div');
+        skillElement.className = 'skill-box'; // Clase para el estilo
+
+        // Añadir el contenido HTML
+        skillElement.innerHTML = `
+        <span class="title">${skill.nombre}</span>
+        <div class="skill-bar">
+            <span class="skill-per ${skill.nombre.toLowerCase()}" style="width:${skill.porcentajeAvance}%">
+                <span class="tooltip">${skill.porcentajeAvance}%</span>
+            </span>
+        </div>
+        `;
+
+        // Añadir el elemento al contenedor
+        skillsContainer.appendChild(skillElement);
+    }
+}
+
+

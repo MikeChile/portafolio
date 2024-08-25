@@ -1,6 +1,6 @@
 {
   "name": "portafolio",
-  "version": "3.0.2",
+  "version": "3.0.3",
   "description": "portafolio web",
   "main": "index.js",
   "scripts": {

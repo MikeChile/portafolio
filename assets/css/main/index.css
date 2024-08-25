@@ -1,6 +1,5 @@
 /* Importa los archivos CSS modulares */
 @import "./sections.css";
-@import "./layout.css";
 @import "./themes.css";
 
 @import "./home.css";

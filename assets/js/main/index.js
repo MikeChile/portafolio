@@ -3,7 +3,6 @@ import { handleScroll } from './scroll.js';
 import { handleTouchStart, handleTouchMove } from './touch.js';
 import { escribirPalabra } from './escribirPalabra.js';
 import { iniciarBuscador } from './buscador.js';
-import { mostrarLenguajes } from './skills.js'; // Importa la función para mostrar las habilidades
 import { inicializarIndicadores } from './controladorSections.js'; // Importa la función para inicializar los indicadores
 
 //mouse
@@ -89,9 +88,6 @@ escribirPalabra();
 
 // Inicializa el buscador
 iniciarBuscador();
-
-// Inicializa y muestra las habilidades
-mostrarLenguajes();
 
 // Maneja el cambio de color en el header al hacer scroll
 const header = document.querySelector('header');
