@@ -239,6 +239,54 @@ header.fondo {
     opacity: 1;
   }
 }
+.email-home {
+  font-size: 24px;
+  padding: 0;
+  padding-top: 5px;
+}
+
+#datos {
+  position: absolute;
+  bottom: 30px;
+  width: 100%;
+  text-align: center;
+  font-family: "Arial", sans-serif;
+  color: #333;
+}
+
+.cajaDato {
+  min-height: 100px;
+  max-width: 200px;
+  border-radius: 10px;
+  padding: 10px 20px;
+  margin: 10px 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+#datos .num {
+  font-size: 2em;
+  font-weight: bold;
+  margin-right: 10px;
+  color: #e2e2e2; /* Color principal */
+  text-shadow: 0 0 3px cyan, 0 0 6px cyan, 0 0 8px rgba(0, 123, 255, 0.5);
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+#datos .num:hover {
+  color: cyan; /* Cambia el color ligeramente al hacer hover */
+  text-shadow: 0 0 4px cyan, 0 0 8px cyan, 0 0 10px rgba(0, 136, 255, 0.5);
+}
+
+#datos span {
+  font-size: 0.5em;
+  font-weight: normal;
+  color: #c5c5c5;
+  text-align: left;
+}
 
 /*MEDIA QUERYS*/
 /*movil*/
@@ -257,6 +305,10 @@ header.fondo {
     height: 105%;
     overflow: hidden;
     z-index: -1;
+  }
+
+  #datos {
+    display: none;
   }
 }
 
