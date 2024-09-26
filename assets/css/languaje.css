@@ -218,6 +218,65 @@ h1 {
   background: url(../img/pizzeria.png) 30% 1% / cover no-repeat;
 }
 
+/*CCM*/
+.job1 {
+  background: url(../img/ccm.png) 30% 1% / cover no-repeat;
+}
+
+/*Funeraria*/
+.job2 {
+  background: url(../img/funeraria.png) 30% 1% / cover no-repeat;
+}
+
+/*Solution tek*/
+.job3 {
+  background: url(../img/solutiontek.png) 30% 1% / cover no-repeat;
+}
+/*Omegacool*/
+.job4 {
+  background: url(../img/omegacool.png) 30% 1% / cover no-repeat;
+}
+/*Atencioarquitectura*/
+.job5 {
+  background: url(../img/atencio.png) 30% 1% / cover no-repeat;
+}
+/*Lmasalud*/
+.job6 {
+  background: url(../img/lmasalud.png) 30% 1% / cover no-repeat;
+}
+/*Biblioteca CCM*/
+.job7 {
+  background: url(../img/bibliotecaccm.png) 30% 1% / cover no-repeat;
+}
+/*Funeraria gerlach*/
+.job8 {
+  background: url(../img/funerariagerlach.png) 30% 1% / cover no-repeat;
+}
+/*Hotel san luis*/
+.job9 {
+  background: url(../img/hotelsanluis.png) 30% 1% / cover no-repeat;
+}
+/*grupo IG*/
+.job10 {
+  background: url(../img/grupoig.png) 30% 1% / cover no-repeat;
+}
+/*Farias*/
+.job11 {
+  background: url(../img/farias.png) 30% 1% / cover no-repeat;
+}
+/*Check online*/
+.job12 {
+  background: url(../img/checkonline.png) 30% 1% / cover no-repeat;
+}
+/*Walcom*/
+.job13 {
+  background: url(../img/walcom.png) 30% 1% / cover no-repeat;
+}
+/*Techomania*/
+.job14 {
+  background: url(../img/techomania.png) 30% 1% / cover no-repeat;
+}
+
 .example-3 .date {
   position: absolute;
   top: 0;

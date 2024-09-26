@@ -362,6 +362,18 @@
 
                     <!-- Sitios Web -->
                     <div class="col-12 col-md-3 mb-2">
+                        <a href="./pages/jobs.html" title="Trabajos Realizados" class="card-link">
+                            <div class="card">
+                                <img src="assets/img/proyectos.jpg" class="card-img-top" alt="Trabajos Realizados">
+                                <div class="card-overlay">
+                                    <div class="card-title">Trabajos Realizados</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Sitios Web -->
+                    <div class="col-12 col-md-3 mb-2">
                         <a href="./pages/sites.html" title="Sitios Web" class="card-link">
                             <div class="card">
                                 <img src="assets/img/sitio_web.jpg" class="card-img-top" alt="Sitio Web">
@@ -583,6 +595,30 @@
                                 </div>
                             </div>
                         </form>
+
+                        <script>
+                            $(document).ready(function () {
+                                $('#formulario').submit(function (e) {
+                                    e.preventDefault();
+                                    var nombre = $('#nombre').val();
+                                    var apellido = $('#apellido').val();
+                                    var email = $('#email').val();
+                                    var mensaje = $('#mensaje').val();
+
+                                    $.ajax({
+                                        type: 'POST',
+                                        url: './assets/php/enviar.php',
+                                        data: { nombre: nombre, apellido: apellido, email: email, mensaje: mensaje },
+                                        success: function (response) {
+                                            alert('Correo electrónico enviado con éxito!');
+                                        },
+                                        error: function (xhr, status, error) {
+                                            alert('Error al enviar el correo electrónico: ' + error);
+                                        }
+                                    });
+                                });
+                            });
+                        </script>
                     </div>
                 </div>
 
