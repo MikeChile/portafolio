@@ -263,6 +263,16 @@ export function displayJobs(projects) {
             const projectElement = document.createElement('div');
             projectElement.className = 'col-12 col-md-4 mb-4';
 
+            // Determinar qué ícono mostrar según el lenguaje principal
+            let lenguajeIcon;
+            if (project.lenguajePrincipal.toLowerCase() === 'javascript') {
+                lenguajeIcon = `<i class='bx bxl-javascript'></i>`;
+            } else if (project.lenguajePrincipal.toLowerCase() === 'php') {
+                lenguajeIcon = `<i class='bx bxl-php'></i>`;  // Verifica que 'bx bxl-php' es el ícono correcto
+            } else {
+                lenguajeIcon = ''; // Si no es JS o PHP, no mostrar nada
+            }
+
             projectElement.innerHTML = `
             <div class="example-3 card p-1">
                 <div class="wrapper ${project.portada}">
@@ -275,7 +285,7 @@ export function displayJobs(projects) {
                         <li class="pt-2"><a href="${project.repositorioCodigo}" target="_blank"><i class='bx bxl-github'></i></a></li>
                         <li class="pt-2"><a href="#"><i class='bx bxl-html5'></i></a></li>
                         <li class="pt-2"><a href="#"><i class='bx bxl-css3'></i></a></li>
-                        <li class="pt-2"><a href="#"><i class='bx bxl-javascript'></i></a></li>
+                        ${lenguajeIcon ? `<li class="pt-2"><a href="#">${lenguajeIcon}</a></li>` : ''}
                     </ul>
                     <div class="data">
                         <div class="content">
@@ -293,5 +303,6 @@ export function displayJobs(projects) {
         container.innerHTML = 'No se encontraron proyectos.';
     }
 }
+
 
 
