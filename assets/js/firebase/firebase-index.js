@@ -36,7 +36,7 @@ portafolio-mike-80686
 
 
 // Datos de los proyectos a agregar
-/*const projectsData = [
+const projectsData = [
     {
         id: '24',
         nombreProyecto: 'Sidebar 01',
@@ -44,7 +44,7 @@ portafolio-mike-80686
         fechaCreacion: '2024-09-27',
         lenguajePrincipal: 'CSS',
         portada: 'secc01',
-        repositorioCodigo: 'https://github.com/MikeChile/portafolio/pages/secciones/sidebar01/',
+        repositorioCodigo: 'https://github.com/MikeChile/portafolio/tree/main/pages/secciones/sidebar01',
         repositorioVisual: 'https://mikechile.github.io/portafolio/pages/secciones/sidebar01/',
         tipoProyecto: 'seccion' // Nuevo campo
     },
@@ -55,7 +55,7 @@ portafolio-mike-80686
         fechaCreacion: '2024-09-27',
         lenguajePrincipal: 'CSS',
         portada: 'secc02',
-        repositorioCodigo: 'https://github.com/MikeChile/portafolio/pages/secciones/sidebar02/',
+        repositorioCodigo: 'https://github.com/MikeChile/portafolio/tree/main/pages/secciones/sidebar02',
         repositorioVisual: 'https://mikechile.github.io/portafolio/pages/secciones/sidebar02/',
         tipoProyecto: 'seccion' // Nuevo campo
     },
@@ -66,7 +66,7 @@ portafolio-mike-80686
         fechaCreacion: '2024-09-27',
         lenguajePrincipal: 'JAVASCRIPT',
         portada: 'secc03',
-        repositorioCodigo: 'https://github.com/MikeChile/portafolio/pages/secciones/sidebar03_mode_dark/',
+        repositorioCodigo: 'https://github.com/MikeChile/portafolio/tree/main/pages/secciones/sidebar03_mode_dark',
         repositorioVisual: 'https://mikechile.github.io/portafolio/pages/secciones/sidebar03_mode_dark/',
         tipoProyecto: 'seccion' // Nuevo campo
     },
@@ -77,19 +77,19 @@ portafolio-mike-80686
         fechaCreacion: '2024-09-27',
         lenguajePrincipal: 'JAVASCRIPT',
         portada: 'secc04',
-        repositorioCodigo: 'https://github.com/MikeChile/portafolio/pages/secciones/sidebar04_rotatorio/',
+        repositorioCodigo: 'https://github.com/MikeChile/portafolio/tree/main/pages/secciones/sidebar04_rotatorio',
         repositorioVisual: 'https://mikechile.github.io/portafolio/pages/secciones/sidebar04_rotatorio/',
         tipoProyecto: 'seccion' // Nuevo campo
     }
 
-];*/
+];
 
 // Función para inicializar la aplicación y obtener los datos
 function init() {
     // Agregar proyectos a Firebase
-    /*projectsData.forEach(project => {
+    projectsData.forEach(project => {
         addProject(project.id, project.nombreProyecto, project.descripcion, project.fechaCreacion, project.lenguajePrincipal, project.portada, project.repositorioCodigo, project.repositorioVisual, project.tipoProyecto);
-    });*/
+    });
 
     /*addProjectSkill('25', '1');
     addProjectSkill('25', '2');
