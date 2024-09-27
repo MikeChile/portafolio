@@ -15,7 +15,7 @@ async function showSectionProjects() {
             // Filtrar los proyectos según la sección deseada (ajustar la sección a filtrar)
             const sectionProjects = Object.values(projects).filter(project => {
                 console.log('Filtrando proyecto:', project); // Verificar cada proyecto
-                return project.seccion && project.seccion.toLowerCase() === 'deseada'; // Cambia 'deseada' por la sección que deseas filtrar
+                return project.tipoProyecto && project.tipoProyecto.toLowerCase() === 'seccion'; // Cambia 'deseada' por la sección que deseas filtrar
             });
 
             console.log('Proyectos por sección filtrados:', sectionProjects); // Verificar los proyectos filtrados

@@ -277,6 +277,23 @@ h1 {
   background: url(../img/techomania.png) 30% 1% / cover no-repeat;
 }
 
+/*sidebar 01*/
+.secc01 {
+  background: url(../img/sidebar01.png) 30% 1% / cover no-repeat;
+}
+/*sidebar 02*/
+.secc02 {
+  background: url(../img/simplebar.png) 30% 1% / cover no-repeat;
+}
+/*sidebar 03*/
+.secc03 {
+  background: url(../img/darkmode.png) 30% 1% / cover no-repeat;
+}
+/*sidebar 04*/
+.secc04 {
+  background: url(../img/rotatorio.png) 30% 1% / cover no-repeat;
+}
+
 .example-3 .date {
   position: absolute;
   top: 0;

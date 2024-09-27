@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>menu</title>
+    <link rel="stylesheet" href="sidemenu.css">
+</head>
+<body>
+    <div id="sidemenu" class="menu-collapsed">
+        <!-- HEADER -->
+        <div id="header">
+            <div id="title"><span>vidma</span></div>
+            <div id="menu-btn">
+                <div class="btn-hamburger"></div>
+                <div class="btn-hamburger"></div>
+                <div class="btn-hamburger"></div>
+            </div>
+        </div>
+
+        <!-- PROFILE -->
+        <div id="profile">
+            <div id="photo">
+                <img src="https://yt3.ggpht.com/a/AATXAJxVxgTuK_W0Eg8QhM8oGmQFeN0YU-g_SK7uIA=s48-c-k-c0xffffffff-no-rj-mo" alt="">
+            </div>
+            <div id="name">
+                <span>marcos</span>
+            </div>
+        </div>
+
+        <!-- ITEMS -->
+        <div id="menu-items">
+            <div class="item">
+                <a href="">
+                    <div class="icon"><img src="" alt="">
+                    </div>
+                    <div class="title"><span>cloud</span></div>
+                </a>
+            </div>
+            <div class="item separator">
+                <a href="">
+                    <div class="icon"><img src="" alt="">
+                    </div>
+                    <div class="title"><span>cloud</span></div>
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        const btn = document.querySelector('#menu-btn');
+        const menu = document.querySelector('#sidemenu');
+        btn.addEventListener('click', e => {
+            menu.classList.toggle("menu-expanded");
+            menu.classList.toggle("menu-collapsed");
+
+            document.querySelector('body').classList.toggle('body-expanded');
+        });
+    </script>
+</body>
+</html>

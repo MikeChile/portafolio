@@ -1,26 +1,26 @@
 .carousel-control-next {
-    right: -90px;
+  right: -90px;
 }
 .carousel-control-prev {
-    left: -90px;
+  left: -90px;
 }
 
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,700);
 
 /* Variables */
 :root {
-  --dark-blue: #1E1B2D;
+  --dark-blue: #1e1b2d;
   --light-blue: #828092;
   --white: #fff;
   --black: #000;
-  --open-sans: 'Open Sans', sans-serif;
+  --open-sans: "Open Sans", sans-serif;
 }
 
 * {
   box-sizing: border-box;
 }
 
-body {  
+body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-family: var(--open-sans);
@@ -59,8 +59,8 @@ h1 {
   color: var(--white);
 }
 
-.example-3{
-    width: 100%;
+.example-3 {
+  width: 100%;
 }
 
 .card .wrapper {
@@ -68,7 +68,8 @@ h1 {
   min-height: 540px;
   position: relative;
   overflow: hidden;
-  box-shadow: 0 19px 38px rgba(var(--black), 0.3), 0 15px 12px rgba(var(--black), 0.2);
+  box-shadow: 0 19px 38px rgba(var(--black), 0.3),
+    0 15px 12px rgba(var(--black), 0.2);
 }
 
 .card .wrapper:hover .data {
@@ -102,72 +103,68 @@ h1 {
   margin: 0;
 }
 
-.card input[type='checkbox'] {
+.card input[type="checkbox"] {
   display: none;
 }
 
-.card input[type='checkbox']:checked + .menu-content {
+.card input[type="checkbox"]:checked + .menu-content {
   transform: translateY(-60px);
 }
 
-.example-3 .wrapper {
-    background: url(https://images.unsplash.com/photo-1547405358-4ef2671bb1bb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80) 30% 1% / cover no-repeat;
-  }
-  
-  .example-3 .date {
-    position: absolute;
-    top: 0;
-    right: 0;
-    background-color: #333;
-    color: #ffffff;
-    padding: 0.75rem;
-  }
-  
-  .example-3 .date span {
-    display: block;
-    text-align: center;
-  }
-  
-  .example-3 .date .day {
-    font-weight: 700;
-    font-size: 3rem;
-    text-shadow: 2px 3px 2px rgba(0, 0, 0, 0.18);
-  }
-  
-  .example-3 .date .month {
-    text-transform: uppercase;
-  }
-  
-  .example-3 .date .month,
-  .example-3 .date .year {
-    font-size: 10px;
-  }
-  
-  .example-3 .content {
-    background-color: #333;
-    color: white;
-    box-shadow: 0 5px 30px 10px rgba(0, 0, 0, 0.3);
-  }
-  
-  .example-3 .title a {
-    color: white;
-  }
-  
-  .example-3 .menu-content {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 0%;
-  }
-  
-  .example-3 .menu-content li {
-    text-align: center;
-    width: 3rem;
-    background-color: #333;
-    height: 3rem;
-    position: relative;
-  }
-  
-  .example-3 .menu-content a {
-    font-size: 24px;
-  }
+.example-3 .date {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #333;
+  color: #ffffff;
+  padding: 0.75rem;
+}
+
+.example-3 .date span {
+  display: block;
+  text-align: center;
+}
+
+.example-3 .date .day {
+  font-weight: 700;
+  font-size: 3rem;
+  text-shadow: 2px 3px 2px rgba(0, 0, 0, 0.18);
+}
+
+.example-3 .date .month {
+  text-transform: uppercase;
+}
+
+.example-3 .date .month,
+.example-3 .date .year {
+  font-size: 10px;
+}
+
+.example-3 .content {
+  background-color: #333;
+  color: white;
+  box-shadow: 0 5px 30px 10px rgba(0, 0, 0, 0.3);
+}
+
+.example-3 .title a {
+  color: white;
+}
+
+.example-3 .menu-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+}
+
+.example-3 .menu-content li {
+  text-align: center;
+  width: 3rem;
+  background-color: #333;
+  height: 3rem;
+  position: relative;
+}
+
+.example-3 .menu-content a {
+  font-size: 24px;
+}
