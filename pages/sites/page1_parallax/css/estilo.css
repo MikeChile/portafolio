@@ -1,0 +1,272 @@
+.top-bar{
+    width:100%;
+    color:white;
+    border-top:1px solid white;
+    height:40px;
+    text-align:center;
+}
+.header-main{
+    width:100%;
+    background-color:rgb(11, 35, 248);
+    height: 60px;
+    color:white;
+}
+body{
+    background-size: 100% 100%; 
+    background-attachment: fixed;
+}
+html{
+    height: 100% 100% auto;
+	
+} 
+.parallax{
+    width:100%;
+    height:100vh;
+    background-image: url('../images/fondo1.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.parallax h2{
+    font-size:50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:white;
+}
+.parallax p{
+    font-size:30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:white;
+}
+.sect-1{
+    height:300px;
+}
+.sect-1 p{
+    font-size:70px;
+}
+h2{
+    font-size:32px;
+    font-weight: 300;
+    text-align: center;
+
+}
+.parallax-medio{
+    height: 450px;
+    background-image: url('../images/fondo2.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+
+}
+.parallax-medio h2{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size:42px;
+    font-weight: 300;
+    text-align: center;
+    color:white;
+
+}
+
+.sect-2 .col-sm{
+    padding:5px;
+    padding-bottom:40px;
+    
+}
+
+.parallax-menor{
+    height: 400px;
+    background-image: url('../images/fondo3.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+
+}
+.parallax-menor h2{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size:42px;
+    font-weight: 300;
+    text-align: center;
+    color:white;
+
+}
+.parallax-menor p{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size:32px;
+    font-weight: 300;
+    text-align: justify;
+    color:white;
+    background-color: rgba(0, 0, 0, 0.438);
+
+}
+h2{
+    padding:20px;
+    text-align:center;
+    display:flex;
+    height: inherit;
+    justify-content: center;
+    align-items: center;
+}
+h3{
+    padding:15px;
+    padding-top:0px;
+    margin-top:-10px;
+    text-align:center;
+    display:flex;
+    height: inherit;
+    justify-content: center;
+    align-items: center;
+    color:white;
+}
+p{
+    padding-left:40px;
+    padding-right: 40px;
+    padding-bottom:40px;
+    text-align:justify;
+    display:flex;
+    height: inherit;
+    justify-content: center;
+    align-items: center;
+}
+body, html{ margin:0; padding:0;}
+.nv2{ z-index:9999999;height:80px; width:100%; background:rgba(31, 96, 236, 0.925); color:white; text-align:center}
+.contenido{width:100%;}
+
+.fixed{position:fixed; top:0}
+
+.nv2-r{
+    padding:0px;
+    padding-top:15px;
+    
+    font-size:20px;
+}
+.active{
+    background: rgba(11, 31, 212, 0.678);
+    border-radius:10px;
+    height: 46px;
+}
+.active:hover{
+    background: rgba(11, 31, 212, 0.952);
+}
+.par{
+    padding:20px;
+}
+
+
+
+
+
+
+.parallax-ser{
+    width:100%;
+    height:100vh;
+    background-image: url('../images/fondo5.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display:flex;
+    justify-content: left;
+    align-items: center;
+    text-align: left ;
+}
+.parallax-ser h2{
+    font-size:70px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:white;
+}
+.parallax-ser p{
+    font-size:40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:white;
+}
+.sect-ser-1{
+    height:500px;
+}
+.sect-ser-1 p{
+    font-size:40px;
+}
+.sect-ser-2{
+    height:500px;
+}
+.sect-ser-2 p{
+    font-size:40px;
+}
+h4{
+    font-size:20px;
+    color: black;
+}
+
+
+
+.parallax-QS{
+    width:100%;
+    height:100vh;
+    background-image: url('../images/quienessomos.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display:flex;
+    justify-content: left;
+    align-items: center;
+    text-align: left ;
+}
+.parallax-QS h2{
+    font-size:70px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:white;
+}
+.parallax-QS p{
+    font-size:40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:white;
+}
+.sect-QS-1{
+    height:500px;
+}
+.sect-QS-1 p{
+    font-size:20px;
+}
+.sect-QS-2{
+    height:500px;
+}
+.sect-QS-2 p{
+    font-size:33px;
+}
+.sect-QS-3{
+    height:500px;
+}
+.sect-QS-3 p{
+    font-size:33px;
+}
+h4{
+    font-size:20px;
+    color: black;
+}
+
+.sect-cont{
+    height:500px;
+}
+.sect-cont p{
+    font-size:50px;
+}
+
+.formularioSoporte{
+    border: 1px solid black;
+    border-radius:25px;
+    padding:20px;
+}
+
+.formularioSoporte input,textarea, select{
+    border: 1px solid black;
+    border-radius:25px;
+    margin-bottom:5px;
+    padding:5px;
+    width:100%;
+}
+#botonsoporte:hover{
+    background-color: rgb(12, 16, 243);
+}

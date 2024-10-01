@@ -294,6 +294,46 @@ h1 {
   background: url(../img/rotatorio.png) 30% 1% / cover no-repeat;
 }
 
+/* Sitio web 1 */
+.site01 {
+  background: url(../img/page01.png) 30% 1% / cover no-repeat;
+}
+
+/* Sitio web 2 */
+.site02 {
+  background: url(../img/page02.png) 40% 10% / cover no-repeat;
+}
+
+/* Sitio web 3 */
+.site03 {
+  background: url(../img/page03.png) 50% 20% / cover no-repeat;
+}
+
+/* Sitio web 4 */
+.site04 {
+  background: url(../img/page04.png) 60% 30% / cover no-repeat;
+}
+
+/* Sitio web 5 */
+.site05 {
+  background: url(../img/page05.png) 70% 40% / cover no-repeat;
+}
+
+/* Sitio web 6 */
+.site06 {
+  background: url(../img/page06.png) 80% 50% / cover no-repeat;
+}
+
+/* Sitio web 7 */
+.site07 {
+  background: url(../img/page07.png) 90% 60% / cover no-repeat;
+}
+
+/* Sitio web 8 */
+.site08 {
+  background: url(../img/page08.png) 100% 70% / cover no-repeat;
+}
+
 .example-3 .date {
   position: absolute;
   top: 0;

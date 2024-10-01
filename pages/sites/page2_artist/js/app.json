@@ -1,0 +1,32 @@
+{
+    "songs": [
+        {
+            "id": 0,
+            "name": "Mas",
+            "artist": "Tony-Jua",
+            "song": "music/tony.mp3",
+            "image": "IMG-20191220-WA0001.jpg"
+        },
+        {
+            "id": 1,
+            "name": "Dejate Querer",
+            "artist": "lalo ebrantt ft. sebastian yatra",
+            "song": "music/l.mp3",
+            "image": "img/albumes/mxz.jpg"
+        },
+        {
+            "id": 2,
+            "name": "Corazones Sin Romances",
+            "artist": "miguelito",
+            "song": "music/m.mp3",
+            "image": "img/albumes/mxz.jpg"
+        },
+        {
+            "id": 3,
+            "name": "karma",
+            "artist": "noriel ft. rkm y ken-y",
+            "song": "music/n.mp3",
+            "image": "img/albumes/mxz.jpg"
+        }
+    ]
+}

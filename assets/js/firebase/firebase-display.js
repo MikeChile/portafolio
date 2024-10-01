@@ -54,40 +54,47 @@ export function displayProjectsWithSkills(projects, projectSkills, skills) {
     }
 }
 
-// muestra los proyectos de sitios web
+// Muestra los proyectos de sitios web
 export function displayProjects(projects) {
     const container = document.getElementById('projectsContainerSite');
     container.innerHTML = ''; // Limpiar el contenedor antes de agregar nuevos proyectos
 
     if (projects.length > 0) {
-        projects.forEach(project => {
+        // Ordenar los proyectos por fecha (más recientes primero)
+        const sortedProjects = projects.sort((a, b) => {
+            const dateA = new Date(a.fecha_creacion);
+            const dateB = new Date(b.fecha_creacion);
+            return dateB - dateA;  // Ordenar de más reciente a más antiguo
+        });
+
+        sortedProjects.forEach(project => {
             const projectElement = document.createElement('div');
             projectElement.className = 'col-12 col-md-4 mb-4';
 
             projectElement.innerHTML = `
-        <div class="example-3 card p-1">
-            <div class="wrapper ${project.portada}">
-                <div class="date">
-                    <span class="day">${new Date(project.fecha_creacion).getDate()}</span>
-                    <span class="month">${new Intl.DateTimeFormat('es', { month: 'short' }).format(new Date(project.fecha_creacion))}</span>
-                    <span class="year">${new Date(project.fecha_creacion).getFullYear()}</span>
-                </div>
-                <ul class="menu-content">
-                    <li class="pt-2"><a href="${project.repositorioCodigo}" target="_blank"><i class='bx bxl-github'></i></a></li>
-                    <li class="pt-2"><a href="#"><i class='bx bxl-html5'></i></a></li>
-                    <li class="pt-2"><a href="#"><i class='bx bxl-css3'></i></a></li>
-                    <li class="pt-2"><a href="#"><i class='bx bxl-javascript'></i></a></li>
-                </ul>
-                <div class="data">
-                    <div class="content">
-                        <span class="type">${project.tipoProyecto}</span>
-                        <h1 class="title"><a href="${project.repositorioVisual}" target="_blank" title="${project.nombreProyecto}">${project.nombreProyecto}</a></h1>
-                        <p class="text">${project.descripcion}</p>
+            <div class="example-3 card p-1">
+                <div class="wrapper ${project.portada}">
+                    <div class="date">
+                        <span class="day">${new Date(project.fecha_creacion).getDate()}</span>
+                        <span class="month">${new Intl.DateTimeFormat('es', { month: 'short' }).format(new Date(project.fecha_creacion))}</span>
+                        <span class="year">${new Date(project.fecha_creacion).getFullYear()}</span>
+                    </div>
+                    <ul class="menu-content">
+                        <li class="pt-2"><a href="${project.repositorioCodigo}" target="_blank"><i class='bx bxl-github'></i></a></li>
+                        <li class="pt-2"><a href="#"><i class='bx bxl-html5'></i></a></li>
+                        <li class="pt-2"><a href="#"><i class='bx bxl-css3'></i></a></li>
+                        <li class="pt-2"><a href="#"><i class='bx bxl-javascript'></i></a></li>
+                    </ul>
+                    <div class="data">
+                        <div class="content">
+                            <span class="type">${project.tipoProyecto}</span>
+                            <h1 class="title"><a href="${project.repositorioVisual}" target="_blank" title="${project.nombreProyecto}">${project.nombreProyecto}</a></h1>
+                            <p class="text">${project.descripcion}</p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        `;
+            `;
             container.appendChild(projectElement);
         });
     } else {

@@ -36,74 +36,138 @@ portafolio-mike-80686
 
 
 // Datos de los proyectos a agregar
-const projectsData = [
+/*const projectsData = [
+
     {
-        id: '24',
-        nombreProyecto: 'Sidebar 01',
-        descripcion: 'Barra lateral simple con css',
-        fechaCreacion: '2024-09-27',
-        lenguajePrincipal: 'CSS',
-        portada: 'secc01',
-        repositorioCodigo: 'https://github.com/MikeChile/portafolio/tree/main/pages/secciones/sidebar01',
-        repositorioVisual: 'https://mikechile.github.io/portafolio/pages/secciones/sidebar01/',
-        tipoProyecto: 'seccion' // Nuevo campo
-    },
-    {
-        id: '25',
-        nombreProyecto: 'Sidebar 02',
-        descripcion: 'Barra lateral simple con css',
-        fechaCreacion: '2024-09-27',
-        lenguajePrincipal: 'CSS',
-        portada: 'secc02',
-        repositorioCodigo: 'https://github.com/MikeChile/portafolio/tree/main/pages/secciones/sidebar02',
-        repositorioVisual: 'https://mikechile.github.io/portafolio/pages/secciones/sidebar02/',
-        tipoProyecto: 'seccion' // Nuevo campo
-    },
-    {
-        id: '26',
-        nombreProyecto: 'Sidebar 03 Mode Dark',
-        descripcion: 'Barra lateral con modo de cambio de fondo oscuro y claro',
-        fechaCreacion: '2024-09-27',
+        id: '28',
+        nombreProyecto: 'Parallax',
+        descripcion: 'Plantilla web con efecto parallax',
+        fechaCreacion: '2019-11-07',
         lenguajePrincipal: 'JAVASCRIPT',
-        portada: 'secc03',
-        repositorioCodigo: 'https://github.com/MikeChile/portafolio/tree/main/pages/secciones/sidebar03_mode_dark',
-        repositorioVisual: 'https://mikechile.github.io/portafolio/pages/secciones/sidebar03_mode_dark/',
-        tipoProyecto: 'seccion' // Nuevo campo
+        portada: 'site01',
+        repositorioCodigo: 'https://github.com/MikeChile/portafolio/tree/main/pages/sites/page1_parallax/',
+        repositorioVisual: 'https://mikechile.github.io/portafolio/pages/sites/page1_parallax/',
+        tipoProyecto: 'sitio web' // Nuevo campo
     },
     {
-        id: '27',
-        nombreProyecto: 'Sidebar 04 Rotatorio',
-        descripcion: 'Barra lateral con efecto rotatorio',
-        fechaCreacion: '2024-09-27',
+        id: '29',
+        nombreProyecto: 'Artist',
+        descripcion: 'Plantilla web con fondo de video y funciones para artista',
+        fechaCreacion: '2021-11-08',
         lenguajePrincipal: 'JAVASCRIPT',
-        portada: 'secc04',
-        repositorioCodigo: 'https://github.com/MikeChile/portafolio/tree/main/pages/secciones/sidebar04_rotatorio',
-        repositorioVisual: 'https://mikechile.github.io/portafolio/pages/secciones/sidebar04_rotatorio/',
-        tipoProyecto: 'seccion' // Nuevo campo
+        portada: 'site02',
+        repositorioCodigo: 'https://github.com/MikeChile/portafolio/tree/main/pages/sites/page2_artist/',
+        repositorioVisual: 'https://mikechile.github.io/portafolio/pages/sites/page2_artist/',
+        tipoProyecto: 'sitio web' // Nuevo campo
+    },
+    {
+        id: '30',
+        nombreProyecto: 'News',
+        descripcion: 'Plantilla web con tematica de noticias',
+        fechaCreacion: '2021-11-13',
+        lenguajePrincipal: 'JAVASCRIPT',
+        portada: 'site03',
+        repositorioCodigo: 'https://github.com/MikeChile/portafolio/tree/main/pages/sites/page3_news/',
+        repositorioVisual: 'https://mikechile.github.io/portafolio/pages/sites/page3_news/',
+        tipoProyecto: 'sitio web' // Nuevo campo
+    },
+    {
+        id: '31',
+        nombreProyecto: 'Films',
+        descripcion: 'Plantilla web con tematica de plataforma de peliculas',
+        fechaCreacion: '2020-04-07',
+        lenguajePrincipal: 'JAVASCRIPT',
+        portada: 'site04',
+        repositorioCodigo: 'https://github.com/MikeChile/portafolio/tree/main/pages/sites/page4_films/',
+        repositorioVisual: 'https://mikechile.github.io/portafolio/pages/sites/page4_films/',
+        tipoProyecto: 'sitio web' // Nuevo campo
+    },
+    {
+        id: '32',
+        nombreProyecto: 'Landing Page',
+        descripcion: 'Plantilla web de una landing page básica',
+        fechaCreacion: '2021-07-15',
+        lenguajePrincipal: 'JAVASCRIPT',
+        portada: 'site05',
+        repositorioCodigo: 'https://github.com/MikeChile/portafolio/tree/main/pages/sites/page5_landing_page/',
+        repositorioVisual: 'https://mikechile.github.io/portafolio/pages/sites/page5_landing_page/',
+        tipoProyecto: 'sitio web' // Nuevo campo
+    },
+    {
+        id: '33',
+        nombreProyecto: 'Waves',
+        descripcion: 'Plantilla web con efecto de olas en movimientos',
+        fechaCreacion: '2022-12-10',
+        lenguajePrincipal: 'JAVASCRIPT',
+        portada: 'site06',
+        repositorioCodigo: 'https://github.com/MikeChile/portafolio/tree/main/pages/sites/page6_waves/',
+        repositorioVisual: 'https://mikechile.github.io/portafolio/pages/sites/page6_waves/',
+        tipoProyecto: 'sitio web' // Nuevo campo
+    },
+    {
+        id: '34',
+        nombreProyecto: 'Corp',
+        descripcion: 'Plantilla web corporativa',
+        fechaCreacion: '2023-04-05',
+        lenguajePrincipal: 'JAVASCRIPT',
+        portada: 'site07',
+        repositorioCodigo: 'https://github.com/MikeChile/portafolio/tree/main/pages/sites/page7_corp/',
+        repositorioVisual: 'https://mikechile.github.io/portafolio/pages/sites/page7_corp/',
+        tipoProyecto: 'sitio web' // Nuevo campo
+    },
+    {
+        id: '35',
+        nombreProyecto: 'Waves 2',
+        descripcion: 'Plantilla web con efectos de olas fijas',
+        fechaCreacion: '2023-11-30',
+        lenguajePrincipal: 'JAVASCRIPT',
+        portada: 'site08',
+        repositorioCodigo: 'https://github.com/MikeChile/portafolio/tree/main/pages/sites/page8_waves2/',
+        repositorioVisual: 'https://mikechile.github.io/portafolio/pages/sites/page8_waves2/',
+        tipoProyecto: 'sitio web' // Nuevo campo
     }
 
-];
+];*/
 
 // Función para inicializar la aplicación y obtener los datos
 function init() {
     // Agregar proyectos a Firebase
-    projectsData.forEach(project => {
+    /*projectsData.forEach(project => {
         addProject(project.id, project.nombreProyecto, project.descripcion, project.fechaCreacion, project.lenguajePrincipal, project.portada, project.repositorioCodigo, project.repositorioVisual, project.tipoProyecto);
-    });
-
-    /*addProjectSkill('25', '1');
-    addProjectSkill('25', '2');
-    addProjectSkill('26', '1');
-    addProjectSkill('26', '2');
-    addProjectSkill('27', '1');
-    addProjectSkill('27', '2');
-    addProjectSkill('26', '3');
-    addProjectSkill('27', '3');*/
-    /* CCM */
-    /*addProjectSkill('9', '1'); /HTML */
-
-    /* Funeraria Ibanez */
-    /*addProjectSkill('10', '1'); /HTML */
+    });*/
+    /*
+        addProjectSkill('28', '1');
+        addProjectSkill('28', '2');
+        addProjectSkill('28', '3');
+    
+        addProjectSkill('29', '1');
+        addProjectSkill('29', '2');
+        addProjectSkill('29', '3');
+    
+        addProjectSkill('30', '1');
+        addProjectSkill('30', '2');
+        addProjectSkill('30', '3');
+    
+        addProjectSkill('31', '1');
+        addProjectSkill('31', '2');
+        addProjectSkill('31', '3');
+    
+        addProjectSkill('32', '1');
+        addProjectSkill('32', '2');
+        addProjectSkill('32', '3');
+    
+        addProjectSkill('33', '1');
+        addProjectSkill('33', '2');
+        addProjectSkill('33', '3');
+    
+        addProjectSkill('34', '1');
+        addProjectSkill('34', '2');
+        addProjectSkill('34', '3');
+    
+        addProjectSkill('35', '1');
+        addProjectSkill('35', '2');
+        addProjectSkill('35', '3');
+    */
 
 
     // Obtener y mostrar proyectos con habilidades
