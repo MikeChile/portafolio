@@ -1,0 +1,58 @@
+{
+    "proyectos": [
+        {
+            "id": 1,
+            "titulo": "Biblioteca Digital",
+            "descripcion": "Plataforma web inspirada en Odilo, permite gestionar libros digitales, usuarios y estadísticas de lectura.",
+            "imagen": "assets/img/proyectos/biblioteca_digital.jpg",
+            "fecha": "2025-03-15",
+            "tecnologias": [
+                "HTML",
+                "CSS",
+                "JavaScript",
+                "MDBootstrap"
+            ],
+            "demo": "https://mikechile.github.io/CCM/"
+        },
+        {
+            "id": 2,
+            "titulo": "Pizzeria Online",
+            "descripcion": "Sistema para administrar pizzeria y realizar pedidos",
+            "imagen": "assets/img/proyectos/pizzeria.png",
+            "fecha": "2025-02-20",
+            "tecnologias": [
+                "PHP",
+                "MySQL",
+                "Bootstrap",
+                "FPDF"
+            ],
+            "demo": "https://mikechile.github.io/pizzeria/"
+        },
+        {
+            "id": 3,
+            "titulo": "MikeStore",
+            "descripcion": "Tienda Online",
+            "imagen": "assets/img/proyectos/mikestore.png",
+            "fecha": "2025-04-10",
+            "tecnologias": [
+                "React",
+                "Node.js",
+                "MongoDB"
+            ],
+            "demo": "https://mikechile.github.io/MikeStore/"
+        },
+        {
+            "id": 5,
+            "titulo": "Colegio Corazón de María",
+            "descripcion": "Sitio institucional para un colegio, con secciones informativas, galería y portal de noticias.",
+            "imagen": "assets/img/proyectos/colegio_cmm.jpg",
+            "fecha": "2024-12-18",
+            "tecnologias": [
+                "WordPress",
+                "Elementor",
+                "PHP"
+            ],
+            "demo": "https://www.colegiocorazondemaria.cl/new/"
+        }
+    ]
+}

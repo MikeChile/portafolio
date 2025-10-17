@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio Mike | Desarrollador Web & Creador Digital</title>
+
+    <!-- SEO -->
+    <meta name="description"
+        content="Portafolio de Mike — Desarrollador web fullstack y creador digital. Explora mis proyectos, música y diseños web innovadores.">
+    <meta name="keywords"
+        content="Mike, portafolio, desarrollador web, proyectos, música, diseño web, frontend, backend, fullstack, Chile">
+    <meta name="author" content="Mike">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph / Redes sociales -->
+    <meta property="og:title" content="Portafolio Mike | Desarrollador Web & Creador Digital">
+    <meta property="og:description"
+        content="Explora los proyectos, canciones y creaciones digitales de Mike. Tecnología, arte y música en un solo espacio.">
+    <meta property="og:image" content="https://mikechile.github.io/portafolio/assets/img/preview.jpg">
+    <meta property="og:url" content="https://mikechile.github.io/portafolio/">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="es_CL">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="./assets/img/favicon.png">
+
+    <!-- Fuentes y estilos -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Poppins:wght@400;600&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+
+    <!-- CSS principal -->
+    <link rel="stylesheet" href="./assets/css/styles.css">
+
+    <!-- Accesibilidad y compatibilidad -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="theme-color" content="#0f0f0f">
+</head>
+
+<body>
+
+    <!-- HOME -->
+    <header id="home">
+        <!-- NAVBAR DOCK -->
+        <nav class="dock-navbar">
+            <ul>
+                <li>
+                    <a href="#home">
+                        <i class="fas fa-home"></i>
+                        <span class="tooltip">Inicio</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#sobre-mi">
+                        <i class="fas fa-user"></i>
+                        <span class="tooltip">Sobre mí</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#proyectos">
+                        <i class="fas fa-folder-open"></i>
+                        <span class="tooltip">Proyectos</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#skills">
+                        <i class="fas fa-code"></i>
+                        <span class="tooltip">Skills</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#contacto">
+                        <i class="fas fa-envelope"></i>
+                        <span class="tooltip">Contacto</span>
+                    </a>
+                </li>
+            </ul>
+            <!-- Fecha y hora estilo Windows -->
+            <div class="dock-reloj" id="dockReloj">
+                <div id="relojHora"></div>
+                <div id="relojFecha"></div>
+                <span class="tooltip reloj-tooltip">Hora y fecha actual</span>
+            </div>
+        </nav>
+
+        <!-- TÍTULO PRINCIPAL -->
+        <div class="hero-text">
+            <h1>MIKEDEV</h1>
+            <h2 class="titulo-dinamico">
+                <span id="texto-dinamico">Desarrollador Web</span>
+                <span class="cursor">|</span>
+            </h2>
+
+            <!-- REDES SOCIALES + BOTÓN -->
+            <div class="footer-social my-4 d-flex align-items-center justify-content-center" style="gap: 1.5rem;">
+                <a href="https://github.com/MikeChile" target="_blank" class="footer-social-link" title="GitHub">
+                    <i class="bx bxl-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/miguel-andrades-951110133/" target="_blank"
+                    class="footer-social-link" title="LinkedIn">
+                    <i class="bx bxl-linkedin"></i>
+                </a>
+                <a href="./assets/doc/CV Miguel Andrades - 2025.pdf" target="_blank" class="footer-social-link"
+                    title="Descargar CV">
+                    <i class="bx bxs-file-pdf"></i>
+                </a>
+
+                <!-- BOTÓN DE LLAMADA A LA ACCIÓN -->
+                <a href="#contacto" class="btn-neon">Contáctame</a>
+            </div>
+
+        </div>
+
+        <!-- DATOS -->
+        <div id="datos">
+            <div class="cajaDato">
+                <div class="num">5</div>
+                <span>Años de experiencia</span>
+            </div>
+            <div class="cajaDato">
+                <div class="num">25</div>
+                <span>Proyectos Personales</span>
+            </div>
+            <div class="cajaDato">
+                <div class="num">30</div>
+                <span>Proyectos Comerciales</span>
+            </div>
+            <div class="cajaDato">
+                <div class="num">24</div>
+                <span>Tecnologías Aprendidas</span>
+            </div>
+        </div>
+
+    </header>
+
+    <!-- SOBRE MÍ -->
+    <section id="sobre-mi" class="content py-5">
+        <div class="container">
+
+            <div class="row justify-content-center align-items-center">
+
+                <!-- Imagen de perfil -->
+                <div class="col-12 col-md-5 text-center mb-4 mb-md-0">
+                    <div class="card-img-perfil">
+                        <div class="content-img-perfil">
+                            <img src="./assets/img/mike.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Texto y botones -->
+                <div class="col-12 col-md-5 text-start">
+                    <h2 class="subtitle text-center mb-4">Sobre Mí</h2>
+
+                    <p class="lead full-version mb-4">
+                        Desarrollador web apasionado por la tecnología y la innovación. Me apasiona crear soluciones
+                        digitales que mejoren la vida de las personas y transformen negocios. Con experiencia en
+                        diseño y desarrollo web, me enfoco en brindar soluciones personalizadas y efectivas que
+                        satisfagan las necesidades de mis clientes. Desde sitios web corporativos hasta e-commerce y
+                        aplicaciones web, estoy aquí para ayudarte a alcanzar tus objetivos en línea.
+                    </p>
+
+                    <div class="d-flex gap-3 mt-3">
+                        <a class="btn-neon neon2" href="#proyectos">
+                            <i class="bx bxs-briefcase"></i> Ver proyectos
+                        </a>
+                        <a class="btn-neon neon2" href="#proyectos">
+                            <i class="bx bxl-github"></i> Ver repositorio
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROYECTOS -->
+    <section id="proyectos">
+        <div class="container proyectos-container">
+            <h2 class="subtitle">Proyectos</h2>
+
+            <!-- Contenedor dinámico de proyectos -->
+            <div class="proyectos-grid" id="proyectosGrid">
+                <!-- Los proyectos se insertan aquí con JS -->
+            </div>
+
+            <div class="text-center mt-4">
+                <button class="btn-neon" id="loadMore">Cargar más</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="subtitle">Mis Skills</h2>
+            </div>
+
+            <!-- Tecnologías Web -->
+            <div class="mb-4">
+                <h3 class="text-center mb-3">Tecnologías Web</h3>
+                <div class="row justify-content-center g-3">
+                    <div class="col-6 col-sm-4 col-md-3">
+                        <div class="cajaSkill">
+                            <i class="bx bxl-html5"></i>
+                            <p>HTML5</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-3">
+                        <div class="cajaSkill">
+                            <i class="bx bxl-css3"></i>
+                            <p>CSS3</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-3">
+                        <div class="cajaSkill">
+                            <i class="bx bxl-javascript"></i>
+                            <p>JavaScript</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-3">
+                        <div class="cajaSkill">
+                            <i class="bx bxl-php"></i>
+                            <p>PHP</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Frameworks y Librerías -->
+            <div class="mb-4">
+                <h3 class="text-center mb-3">Frameworks y Librerías</h3>
+                <div class="row justify-content-center g-3">
+                    <div class="col-6 col-sm-4 col-md-3">
+                        <div class="cajaSkill">
+                            <i class="bx bxl-react"></i>
+                            <p>React</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-3">
+                        <div class="cajaSkill">
+                            <i class="bx bxl-angular"></i>
+                            <p>Angular</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-3">
+                        <div class="cajaSkill">
+                            <i class="bx bxl-bootstrap"></i>
+                            <p>Bootstrap</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bases de Datos -->
+            <div class="mb-4">
+                <h3 class="text-center mb-3">Bases de Datos</h3>
+                <div class="row justify-content-center g-3">
+                    <div class="col-6 col-sm-4 col-md-3">
+                        <div class="cajaSkill">
+                            <i class="bx bxl-postgresql"></i>
+                            <p>PostgreSQL</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-3">
+                        <div class="cajaSkill">
+                            <i class="bx bxl-mongodb"></i>
+                            <p>MongoDB</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-3">
+                        <div class="cajaSkill">
+                            <i class="bx bx-data"></i>
+                            <p>MySQL</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Herramientas y Otros -->
+            <div class="mb-4">
+                <h3 class="text-center mb-3">Herramientas y Otros</h3>
+                <div class="row justify-content-center g-3">
+                    <div class="col-6 col-sm-4 col-md-3">
+                        <div class="cajaSkill">
+                            <i class="bx bxl-git"></i>
+                            <p>Git</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-3">
+                        <div class="cajaSkill">
+                            <i class="bx bxl-visual-studio"></i>
+                            <p>VS Code</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">Conecta conmigo</h2>
+            <p class="section-subtitle">Tecnología, diseño e innovación... todo comienza con un mensaje.</p>
+
+            <div class="contact-grid">
+                <!-- Botón 1: WhatsApp principal -->
+                <a href="https://wa.me/56942726426" target="_blank" class="contact-btn neon-btn">
+                    <i class="fab fa-whatsapp"></i>
+                    <span>WhatsApp Principal</span>
+                </a>
+
+                <!-- Botón 2: WhatsApp soporte -->
+                <a href="https://wa.me/56933657070" target="_blank" class="contact-btn neon-btn alt">
+                    <i class="fab fa-whatsapp"></i>
+                    <span>WhatsApp Soporte</span>
+                </a>
+
+                <!-- Correo -->
+                <div class="contact-email">
+                    <i class="fas fa-envelope"></i>
+                    <a href="mailto:mikedev.coder@gmail.com">mikedev.coder@gmail.com</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container text-center position-relative">
+            <!-- Botón Ir Arriba -->
+            <button id="btnIrArriba" class="btn-futurista">
+                <i class="fa-solid fa-arrow-up-long"></i>
+            </button>
+
+            <p>&copy; 2025 Mike. Todos los derechos reservados.</p>
+            <div class="socials">
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JS principal -->
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
