@@ -125,7 +125,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     // Cargar proyectos desde el JSON local
     async function cargarProyectos() {
         try {
-            const respuesta = await fetch("./Assets/api/proyectos.json");
+            const respuesta = await fetch("./assets/api/proyectos.json");
             const data = await respuesta.json();
 
             // ✅ Accedemos a data.proyectos
