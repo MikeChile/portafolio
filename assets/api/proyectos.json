@@ -53,6 +53,19 @@
                 "PHP"
             ],
             "demo": "https://www.colegiocorazondemaria.cl/new/"
+        },
+        {
+            "id": 6,
+            "titulo": "Conecta2",
+            "descripcion": "Sitio web de la comunidad Conecta2, con landing page y dashboard con login para ver estadísticas.",
+            "imagen": "assets/img/proyectos/conectados.png",
+            "fecha": "2025-11-10",
+            "tecnologias": [
+                "Html",
+                "JS",
+                "PHP"
+            ],
+            "demo": "https://mikechile.github.io/conecta2/index.html"
         }
     ]
 }

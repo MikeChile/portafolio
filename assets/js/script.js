@@ -128,18 +128,21 @@ document.addEventListener("DOMContentLoaded", async () => {
             const respuesta = await fetch("./assets/api/proyectos.json");
             const data = await respuesta.json();
 
-            // ✅ Accedemos a data.proyectos
             proyectos = data.proyectos;
 
             if (!Array.isArray(proyectos)) {
                 throw new Error("El archivo JSON no contiene un array válido en 'proyectos'");
             }
 
+            // 🔽 Ordenar por fecha descendente
+            proyectos.sort((a, b) => new Date(b.fecha) - new Date(a.fecha));
+
             mostrarMas(); // Mostrar los primeros
         } catch (error) {
             console.error("Error al cargar proyectos:", error);
         }
     }
+
 
     btnLoadMore.addEventListener("click", mostrarMas);
     cargarProyectos();

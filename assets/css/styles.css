@@ -1007,7 +1007,7 @@ footer .socials a:hover {
 }
 
 .cajaSkill {
-  width: 170px;
+  width: 100%;
   height: 100px;
   background: #111;
   color: #fff;
